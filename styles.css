@@ -1,0 +1,98 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+/* Video na pozadí */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Zajištění, aby video bylo pod obsahem */
+    object-fit: cover; /* Udržení proporcí videa */
+    opacity: 0.5; /* Nastavení průhlednosti */
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Vypnutí horizontálního zobrazení na menších obrazovkách */
+        margin: 10px 0; /* Přidání mezer mezi položkami */
+    }
+
+    main {
+        padding: 10px; /* Menší padding na mobilních zařízeních */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; /* Menší velikost písma pro mobilní zařízení */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Ještě menší mezery na mobilních zařízeních */
+    }
+}
