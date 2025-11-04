@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Domácí opravy, 3D tisk a servis v Praze Východ | František Šubrt</title>
     <meta name="description" content="Profesionální domácí opravy, 3D tisk a služby na Praze Východ. Nabízím také služby hodinového manžela a další asistence pro domácnosti a malé podniky. Kontaktujte Františka Šubrta pro opravy, sestavení nábytku a specializovaná zařízení." />
 
@@ -33,6 +33,22 @@
         p {
             line-height: 1.6;
         }
+
+        /* Přidám styl pro hlavičku s obrázkem */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* nebo flex-start podle preference */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styl obrázku */
+        header img {
+            max-width: 150px; /* upravte velikost podle potřeby */
+            height: auto;
+            margin-right: 20px; /* mezera mezi obrázkem a textem */
+        }
     </style>
     <!-- Strukturovaná data (JSON-LD) -->
   <script type="application/ld+json">
@@ -56,13 +72,15 @@
 </head>
 <body>
     <video autoplay muted loop class="background-video">
-        <source src="VID_1.mp4" type="video/mp4">
+        <source src="VID_1.mp4" type="video/mp4" />
         Váš prohlížeč nepodporuje video tag.
     </video>
     
     <div class="overlay"></div>
     
     <header>
+        <!-- Přidám obrázek -->
+        <img src="images/logo.png" alt="Logo" />
         <h1>Domácí opravy a služby v Praze Východ - František Šubrt</h1>
         <nav>
             <ul>
@@ -72,7 +90,6 @@
                 <li><a href="zařízení.html">Zařízení</a></li>
                 <li><a href="dokumenty.html">Smlouva</a></li>
                 <li><a href="živnostenské oprávnění.html">živnostenské oprávnění</a></li>
-
             </ul>
         </nav>
     </header>
@@ -91,8 +108,6 @@
     </main>
     
     <footer>
-        
-
         <p>Copyright &copy; 2025 František Šubrt. Všechna práva vyhrazena.</p>
     </footer>
 </body>
