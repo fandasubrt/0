@@ -26,7 +26,7 @@ body {
 }
 
 .special-heading {
-    color: yellow; /* nebo jiná barva */
+    color: gray; /* nebo jiná barva */
 }
 
 
@@ -101,4 +101,5 @@ footer {
         margin: 5px 0; /* Ještě menší mezery na mobilních zařízeních */
     }
 }
+
 
