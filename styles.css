@@ -25,6 +25,11 @@ body {
     opacity: 0.5; /* Nastavení průhlednosti */
 }
 
+.special-heading {
+    color: yellow; /* nebo jiná barva */
+}
+
+
 header {
     background: #35424a;
     color: #ffffff;
@@ -96,3 +101,4 @@ footer {
         margin: 5px 0; /* Ještě menší mezery na mobilních zařízeních */
     }
 }
+
