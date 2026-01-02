@@ -3,60 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>František Šubrt - Kontakt</title>
-    <meta name="description" content="Kontaktujte Františka Šubrta, zkušeného řemeslníka z Senohrab, Ondřejova, Mnichovic, Benešova, Říčan a okolí. Nabízím opravy, výrobu na míru a služby hodinového manžela. Domluvte si schůzku ještě dnes!">
+    <title>Kontakt - Řemeslník Ondřejov František Šubrt | Telefon +420 604 590 261</title>
+    <meta name="description" content="Kontaktujte řemeslníka Františka Šubrta v Ondřejově. Telefon +420 604 590 261, email fandasubrt@seznam.cz. Služby v Senohrabech, Mnichovicích, Benešově, Říčanech a okolí. Opravy, výroba na míru, hodinový manžel.">
+    <meta name="keywords" content="kontakt řemeslník Ondřejov, telefon řemeslník Ondřejov, řemeslník Ondřejov František Šubrt, opravy Ondřejov kontakt, hodinový manžel Ondřejov telefon, řemeslník Senohraby kontakt, řemeslník Mnichovice telefon">
+    
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #1a1a1a;
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto auto;
+        }
+        
+        .contact-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .contact-method {
+            flex: 1;
+            min-width: 250px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+        
+        .phone-large {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 10px 0;
+        }
+        
+        .email-link {
+            color: #4CAF50;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        .service-area {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .location-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        
+        .instructions {
+            background-color: rgba(255, 193, 7, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-methods {
+                flex-direction: column;
+            }
+            
+            .contact-method {
+                min-width: auto;
+            }
+            
+            .locations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <!-- Strukturovaná data (JSON-LD) -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "František Šubrt",
-  "jobTitle": "Řemeslník",
-  "telephone": "604 590 261",
-  "email": "fandasubrt@seznam.cz",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Turkovice Ondřejov, Senohraby, Ondřejov, Mnichovice, Benešov, Říčany a okolí",
-    "postalCode": "25166",
-    "addressRegion": "Praha východ",
-
-    "addressCountry": "CZ"
-  },
-  "url": "https://fandasubrt.github.io/0/kontakt.html",
-  "description": "Kontaktujte Františka Šubrta, zkušeného řemeslníka z Senohrab, Ondřejova, Mnichovic, Benešova, Říčan a okolí. Nabízím opravy, výrobu na míru a služby hodinového manžela.",
-  "mainEntityOfPage": "https://fandasubrt.github.io/0/kontakt.html"
-}
-</script>
-
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Kontakt - Řemeslník Ondřejov František Šubrt",
+      "description": "Kontaktní informace pro řemeslníka Františka Šubrta působícího v Ondřejově a okolí",
+      "url": "https://fandasubrt.github.io/0/kontakt.html",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "František Šubrt - Řemeslník Ondřejov",
+        "telephone": "+420604590261",
+        "email": "fandasubrt@seznam.cz",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ke Šmejkalce",
+          "addressLocality": "Turkovice Ondřejov",
+          "postalCode": "25166",
+          "addressCountry": "CZ"
+        },
+        "areaServed": [
+          "Ondřejov",
+          "Senohraby", 
+          "Mnichovice",
+          "Benešov",
+          "Říčany",
+          "Praha-východ"
+        ],
+        "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00"
+      }
+    }
+    </script>
 </head>
+
 <body>
+>
     <header>
-        <h1>František Šubrt</h1>
+        <h1>Kontakt - Řemeslník Ondřejov František Šubrt</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Domov</a></li>
-                <li><a href="služby.html">Služby</a></li>
-                
+                <li><a href="služby.html">Služby-ceník</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="zařízení.html">Zařízení</a></li>
+                <li><a href="dokumenty.html">Smlouva</a></li>
+                <li><a href="oprávnění.html">Oprávnění a certifikáty</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h2>Kontaktujte mě na adrese Turkovice Ondřejov</h2>
-        <p>Telefon: <a href="tel:604590261">604 590 261</a></p>
-        <p>Email: <a href="mailto:fandasubrt@seznam.cz">fandasubrt@seznam.cz</a></p>
-        <h3>Jak mě můžete kontaktovat</h3>
-        <p>Pokud máte zájem o mé služby, prosím, kontaktujte mě telefonicky nebo e-mailem. Bylo by dobré, abyste ke svému dotazu přidali fotografie věcí, které potřebujete opravit nebo vyrobit. Pomůže mi to lépe pochopit vaše požadavky a připravit se na práci.</p>
-        <h4>Nejsem plátce DPH</h4>
-    </main>
+        <div class="contact-container">
+            <h2>Kontaktujte řemeslníka v <span class="highlight">Ondřejově</span></h2>
+            <p>Potřebujete <strong>řemeslníka v Ondřejově nebo okolí</strong>? Jsem vám plně k dispozici. Níže najdete všechny kontaktní informace.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-icon">📞</div>
+                    <h3>Telefon</h3>
+                    <p class="phone-large">
+                        <a href="tel:+420604590261" style="color: #4CAF50; text-decoration: none;">
+                            +420 604 590 261
+                        </a>
+                    </p>
+                    <p>Volat můžete <strong>pondělí až pátek 8:00-18:00</strong>, sobota 8:00-14:00</p>
+                    <p>Preferuji telefonický kontakt pro rychlejší domluvu</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:fandasubrt@seznam.cz" class="email-link">
+                            fandasubrt@seznam.cz
+                        </a>
+                    </p>
+                    <p>Odpovídám obvykle do 24 hodin</p>
+                    <p>Ideální pro zaslání podrobností a fotografií</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">📍</div>
+                    <h3>Adresa</h3>
+                    <p><strong>František Šubrt</strong></p>
+                    <p>Ke Šmejkalce</p>
+                    <p>Turkovice Ondřejov</p>
+                    <p>251 66</p>
+                    <p><em>(Po domluvě dojíždím k vám)</em></p>
+                </div>
+            </div>
+            
+            <div class="service-area">
+                <h3>Působím jako řemeslník v těchto lokalitách:</h3>
+                <div class="locations-grid">
+                    <div class="location-item">
+                        <strong>Ondřejov</strong><br>
+                        Turkovice, Hrusice
+                    </div>
+                    <div class="location-item">
+                        <strong>Senohraby</strong><br>
+                        a okolí
+                    </div>
+                    <div class="location-item">
+                        <strong>Mnichovice</strong><br>
+                        Mirošovice, Strančice
+                    </div>
+                    <div class="location-item">
+                        <strong>Benešov</strong><br>
+                        Poříčí nad Sázavou
+                    </div>
+                    <div class="location-item">
+                        <strong>Říčany</strong><br>
+                        Praha-východ
+                    </div>
+                    <div class="location-item">
+                        <strong>Další obce</strong><br>
+                        do 30 km od Ondřejova
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3>Jak nejlépe kontaktovat řemeslníka?</h3>
+                <p>Pro rychlejší a efektivnější domluvu doporučuji:</p>
+                <ol>
+                    <li><strong>Telefonujte mi</strong> - nejrychlejší způsob, ihned se domluvíme</li>
+                    <li><strong>Pošlete SMS</strong> - pokud nemůžu hned zvednout, zavolám zpět</li>
+                    <li><strong>Napište email</strong> - ideální pro zaslání fotografií a podrobností</li>
+                </ol>
+                
+                <h4>Co připravit před kontaktováním?</h4>
+                <ul>
+                    <li>Fotografie věcí k opravě nebo výrobě</li>
+                    <li>Rozměry (pokud se jedná o výrobu na míru)</li>
+                    <li>Přibližnou představu o termínu provedení práce</li>
+                    <li>Váš kontakt a adresu</li>
+                </ul>
+            </div>
+            
+            <h3>Důležité informace</h3>
+            <p><strong>Nejsem plátce DPH</strong> - ceny jsou uvedeny včetně DPH.</p>
+            <p><strong>Dojíždění</strong> - do okruhu 5 km od Ondřejova zdarma, na větší vzdálenosti 14Kč/km.</p>
+            <p><strong>Záruka</strong> - - na veškeré provedené práce poskytuji záruku.</p>
+            
+            <p style="margin-top: 30px; font-style: italic;">
+                Těším se na vaši poptávku a možnost pomoci vám s opravami, výrobou na míru nebo jinými řemeslnými pracemi v <strong>Ondřejově a okolí</strong>.
+            </p>
+        </div>
+       </main>
+    
     <footer>
-        <p>Copyright &copy; 2025 František Šubrt. Všechna práva vyhrazena.</p>
+        <p>Copyright &copy; 2025 František Šubrt - Řemeslník Ondřejov. Všechna práva vyhrazena.</p>
+        <p>Kontakt: +420 604 590 261 | fandasubrt@seznam.cz | Turkovice Ondřejov</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
