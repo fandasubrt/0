@@ -3,112 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Výroba a úpravy konstrukcí – František Šubrt | Kvalitní služby na Praze východ</title>
-
-    <meta name="description" content="František Šubrt nabízí služby v oblasti výroby a úprav konstrukcí. Kontaktujte mě pro konzultace, cenové nabídky nebo realizaci vašich nápadů s důrazem na kvalitu, spokojenost a hlavně funkčnost." />
+    <title>Výroba konstrukcí na míru Ondřejov | František Šubrt - Řemeslník</title>
+    <meta name="description" content="Výroba a úpravy konstrukcí na míru v Ondřejově a okolí. František Šubrt - řemeslník pro Senohraby, Mnichovice, Benešov, Říčany. Konzultace, opravy, kompletní konstrukce z různých materiálů." />
+    <meta name="keywords" content="výroba konstrukcí Ondřejov, konstrukce na míru, řemeslník výroba, opravy konstrukcí, výroba na míru Ondřejov, kovové konstrukce, dřevěné konstrukce, František Šubrt konstrukce">
+    
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #4CAF50;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        .service-section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .location-badge {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding padding: 5px 10px;
+            border-radius: 4px;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .gallery img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .contact-box {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .contact-box a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .gallery img {
+                max-width: 100%;
+            }
+        }
+    </style>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Výroba a úpravy konstrukcí na míru – František Šubrt",
-  "description": "Nabízím služby v oblasti výroby a úprav konstrukcí, včetně konzultací, menších oprav a kompletních konstrukcí s důrazem na kvalitu a individuální přístup.",
-  "provider": {
-    "@type": "Person",
-    "name": "František Šubrt"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Konstrukční služby",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Konzultace a cenová nabídka",
-        "description": "Projekty začínají konzultací a následnou tvorbou cenové nabídky podle rozsahu a složitosti práce."
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Výroba a úpravy konstrukcí na míru – František Šubrt",
+      "description": "Řemeslnické služby výroby a úprav konstrukcí v Ondřejově, Senohrabech, Mnichovicích, Benešově, Říčanech a okolí. Konzultace, opravy, kompletní konstrukce z dřeva, kovu a plastu.",
+      "provider": {
+        "@type": "Person",
+        "name": "František Šubrt",
+        "telephone": "+420604590261",
+        "email": "fandasubrt@seznam.cz",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Turkovice Ondřejov",
+          "postalCode": "25166",
+          "addressCountry": "CZ"
+        }
       },
-      {
-        "@type": "Offer",
-        "name": "Menší úpravy a opravy",
-        "description": "Úpravy stávajících konstrukcí a drobné opravy s důrazem na detail a efektivitu."
+      "areaServed": {
+        "@type": "GeoGeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.9056,
+          "longitude": 14.7842
+        },
+        "geoRadius": "20000",
+        "description": "Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí"
       },
-      {
-        "@type": "Offer",
-        "name": "Kompletní konstrukce",
-        "description": "Stavba nových konstrukcí a zařízení s důrazem na kvalitu a dlouhou životnost."
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Konstrukční služby",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Konzultace a cenová nabídka",
+            "description": "Projekty začínají konzultací a následnou tvorbou cenové nabídky podle rozsahu a složitosti práce."
+          },
+          {
+            "@type": "Offer",
+            "name": "Menší úpravy a opravy konstrukcí",
+            "description": "Úpravy stávajících konstrukcí a drobné opravy s důrazem na detail a efektivitu."
+          },
+          {
+            "@type": "Offer",
+            "name": "Kompletní konstrukce na míru",
+            "description": "Stavba nových konstrukcí a zařízení s důrazem na kvalitu a dlouhou životnost."
+          },
+          {
+            "@type": "Offer",
+            "name": "Výběr a práce s materiály",
+            "description": "Doporučení a práce s různými materiály, včetně dřeva, kovu a plastu."
+          }
+        ]
       },
-      {
-        "@type": "Offer",
-        "name": "Výběr materiálů",
-        "description": "Doporučení a práce s různými materiály, včetně dřeva, kovu a plastu."
+      "mainEntity": {
+        "@type": "CreativeWork",
+        "name": "Příklady mé práce",
+        "image": [
+          "https://fandasubrt.github.io/0/images/soustruh dělaný1.jpg",
+          "https://fandasubrt.github.io/0/images/multifunkční kufr1.jpg"
+        ],
+        "description": "Fotografie ukazující různé projekty a práce, které jsem realizoval."
       }
-    ]
-  },
-  "mainEntity": {
-    "@type": "CreativeWork",
-    "name": "Příklady mé práce",
-    "image": [
-      "https://fandasubrt.github.io/0/images/soustruh dělaný1.jpg",
-      "https://fandasubrt.github.io/0/images/multifunkční kufr1.jpg",
-     <!-- "https://fandasubrt.github.io/0/images/1.jpg"-->
-    ],
-    "description": "Fotografie ukazující různé projekty a práce, které jsem realizoval."
-  }
-}
-</script>
-
-
+    }
+    </script>
 </head>
 <body>
     <header>
         <h1>Výroba a úpravy konstrukcí na míru – František Šubrt</h1>
-
+        <p><strong>Řemeslník pro Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</strong></p>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Domov</a></li>
                 <li><a href="služby.html">Služby</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="zařízení.html">Zařízení</a></li>
+                <li><a href="dokumenty.html">Smlouva</a></li>
+                <li><a href="oprávnění.html">Oprávnění</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h2>Mé služby v oblasti konstrukcí</h2>
-
+        <div class="service-section">
+            <h2>Výroba konstrukcí na míru v <span class="highlight">Ondřejově a okolí</span></h2>
+            
+            <p>Jako <strong>řemeslník s praxí</strong> působící v regionu <strong>Ondřejov, Senohraby, Mnichovice, Benešov a Říčany</strong> nabízím profesionální služby v oblasti výroby a úprav konstrukckcí na míru. Specializuji se na individuální přístup ke každému projektu.</p>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <span class="location-badge">Ondřejov</span>
+                <span class="location-badge">Senohraby</span>
+                <span class="location-badge">Mnichovice</span>
+                <span class="location-badge">Benešov</span>
+                <span class="location-badge">Říčany</span>
+                <span class="location-badge">Praha-východ</span>
+            </div>
+        </div>
         
-        <h3>Konzultace a cenová nabídka</h3>
-        <p>Nabízím širokou škálu služeb v oblasti úprav a výroby konstrukcí, které jsou přizpůsobeny potřebám každého zákazníka. Každý projekt začíná konzultací, kde společně probereme vaše požadavky a představy. Tato fáze je klíčová, protože mi umožňuje získat jasnou představu o vašich představách a cílech. Na základě těchto informací vytvořím cenovou nabídku, která se odvíjí od rozsahu a složitosti práce, jakož i od použitých materiálů.</p>
-
-        <h3>Menší úpravy a opravy</h3>
-        <p>Pro menší úpravy, jako je například přizpůsobení stávajících konstrukcí nebo drobné opravy, se cena pohybuje v nižší hladině. Tyto projekty mohou zahrnovat například úpravy stávajících zařízení, které jsou potřebné pro zvýšení jejich funkčnosti nebo estetiky. V rámci těchto menších projektů se zaměřuji na detaily a snažím se o maximální využití stávajících materiálů, abych minimalizoval náklady a časovou náročnost.</p>
-
-        <h3>Kompletní konstrukce</h3>
-        <p>Na druhou stranu, kompletní konstrukce, které zahrnují například stavbu nového zařízení, vyžadují více času a plánování, a tím pádem i vyšší investice. V těchto případech pečlivě zohledňuji všechny aspekty projektu, od návrhu až po realizaci. Vždy dbám na to, aby konečný produkt splňoval vaše očekávání a byl vyroben z kvalitních materiálů, které zajistí jeho dlouhou životnost.</p>
-
-        <h3>Výběr materiálů</h3>
-        <p>Použité materiály hrají klíčovou roli v celkových nákladech. Pracuji s různými typy materiálů, včetně dřeva, kovu a plastu, a jsem schopen doporučit nejvhodnější varianty pro váš konkrétní projekt. Každý materiál má své specifické vlastnosti, které mohou ovlivnit nejen vzhled, ale také funkčnost a trvanlivost výsledného produktu.</p>
-
-        <h3>Individuální přístup</h3>
-        <p>Kromě toho se čas potřebný na návrh a plánování rovněž promítá do konečné ceny. Každý projekt je jedinečný a já se snažím poskytnout individuální přístup, který zohledňuje všechny vaše požadavky a přání. Jsem si vědom toho, že kvalitní práce a spokojenost zákazníků jsou na prvním místě, a proto se vždy snažím o transparentnost v komunikaci a cenových nabídkách.</p>
-
-        <h3>Vaše nápady ožijí</h3>
-        <p>Věřím, že kvalitní práce a spokojenost zákazníků jsou na prvním místě, a proto se vždy snažím o transparentnost v komunikaci a cenových nabídkách. Jsem tu, abych vám pomohl přivést vaše nápady k životu! Pokud máte jakékoli dotazy nebo potřebujete další informace, neváhejte mě kontaktovat. Rád vám pomohu s realizací vašich projektů a nápadů.</p>
-
-        <h3>Příklady mé práce</h3>
-        <div class="gallery">
-            <img src="images/soustruh dělaný1.jpg" alt="soustruh dělaný" width="100">
-            <img src="images/multifunkční kufr1.jpg" alt="multifunkční kufr" width="100">
-           <!-- <img src="images/1.jpg" alt="B" width="300"> -->
-            <!-- Přidejte další obrázky podle potřeby -->
+        <div class="service-section">
+            <h3>Konzultace a cenová nabídka</h3>
+            <p>Každý projekt začíná <strong>konzultací</strong>, kde společně probereme vaše požadavky a představy. Jako <strong>řemeslník v Ondřejově</strong> chápu, že každá zakázka je jedinečná. Na základě těchto informací vytvořím <strong>transparentní cenovou nabídku</strong>, která se odvíjí od rozsahu a složitosti práce, jakož i od použitých materiálů.</p>
+        </div>
+        
+        <div class="service-section">
+            <h3>Menší úpravy a opravy konstrukcí</h3>
+            <p>Pro <strong>menší úpravy a opravy</strong> v oblasti <strong>Ondřejova a okolí</strong> se cena pohybuje v nižší hladině. Tyto projekty mohou zahrnovat například úpravy stávajících zařízení, které jsou potřebné pro zvýšení jejich funkčnosti nebo estetiky. V rámci těchto menších projektů se zaměřuji na detaily a snažím se o maximální využití stávajících materiálů.</p>
+        </div>
+        
+        <div class="service-section">
+            <h3>Kompletní konstrukce na míru</h3>
+            <p><strong>Komplepletní konstrukce</strong>, které zahrnují například stavbu nového zařízení, vyžadují více času a plánování. Jako <strong>řemeslník pro Senohraby, Mnichovice, Benešov a Říčany</strong> pečlivě zohledňuji všechny aspekty projektu, od návrhu až po realizaci. Vždy dbám na to, aby konečný produkt splňoval vaše očekávání a byl vyroben z kvalitních materiálů.</p>
+        </div>
+        
+        <div class="service-section">
+            <h3>Výběr materiálů pro konstrukce</h3>
+            <p>Použité materiály hrají klíčovou roli v celkových nákladech. Pracuji s různými typy materiálů, včetně:</p>
+            <ul>
+                <li><strong>Dřevo</strong> - tradiční materiál pro konstrukce, nábytek, zahradní prvky</li>
+                <li><strong>Kov</strong> - kovové konstrukce, rámy, nosné prvky</li>
+                <li><strong>Plast a kompozity</strong> - moderní materiály pro specifické použití</li>
+                <li><strong>Kombinace materiálů</strong> - optimální řešení pro konkrétní účel</li>
+            </ul>
+            <p>Jsem schopen doporučit nejvhodnější varianty pro váš konkrétní projekt v <strong>Ondřejově a okolních obcích</strong>.</p>
+        </div>
+        
+        <div class="service-section">
+            <h3>Individuální přístup ke každému projektu</h3>
+            <p>Kromě toho se čas potřebný na návrh a plánování rovněž promítá do konečné ceny. Každý projekt je jedinečný a já se snažím poskytnout <strong>individuální přístup</strong>, který zohledňuje všechny vaše požadavky a přání. Jsem si vědom toho, že kvalitní práce a spokojenost zákazníků jsou na prvním místě.</p>
+        </div>
+        
+        <div class="service-section">
+            <h3>Vaše nápady ožijí v realitě</h3>
+            <p>Věřím, že kvalitní práce a spokojenost zákazníků jsou na prvním místě, a proto se vždy snažím o transparentnost v komunikaci a cenových nabídkách. Jsem tu, abych vám pomohl přivést <strong>vaše nápady k životu</strong>! Pokud máte jakékoli dotazy nebo potřebujete další informace, neváhejte mě kontaktovat.</p>
+        </div>
+        
+        <div class="service-section">
+            <h3>Příklady mé práce - řemeslnické konstrukce</h3>
+            <p>Zde jsou ukázky některých realizovaných projektů v oblasti <strong>Ondřejova a okolí</strong>:</p>
+            
+            <div class="gallery">
+                <img src="images/soustruh dělaný1.jpg" alt="Soustruh na míru vyrobený řemeslníkem v Ondřejově" title="Soustruh na míru - výroba konstrukce">
+                <img src="images/multifunkční kufr1.jpg" alt="Multifunkční kufr konstrukce na míru od řemeslníka" title="Multifunkční kufr - konstrukce na míru">
+                <!-- Přidejte další obrázky podle potřeby -->
+            </div>
+            
+            <p style="text-align: center; margin-top: 15px; font-style: italic;">Všechny konstrukce jsou navrženy a vyrobeny s důrazem na <strong>kvalitu, funkčnost a dlouhou životnost</strong>.</p>
+        </div>
+        
+        <div class="contact-box">
+            <h3>Potřebujete konstrukci na míru v Ondřejově nebo okolí?</h3>
+            <p>Kontaktujte mě pro konzultaci nebo cenovou nabídku:</p>
+            <p><strong>Telefon:</strong> +420 604 590 261</p>
+            <p><strong>Email:</strong> fandasubrt@seznam.cz</p>
+            <p><strong>Působnost:</strong> Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
+            <p><a href="kontakt.html">→ Přejít na kontaktní stránku</a></p>
         </div>
     </main>
+    
     <footer>
-        <p>Copyright &copy; 2025 František Šubrt. Všechna práva vyhrazena.</p>
+        <p>Copyright &copy; 2025 František Šubrt - Řemeslník Ondřejov. Všechna práva vyhrazena.</p>
+        <p>Výroba a úpravy konstrukcí na míru: Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
