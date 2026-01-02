@@ -37,13 +37,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fandasubrt.github.io/0/3d-tisk.html</loc>
+    <loc>https://fandasubrt.github.io/0/3d_tisk.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fandasubrt.github.io/0/opravy.html</loc>
+    <loc>https://fandasubrt.github.io/0/hodinový_manžel.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -55,19 +55,19 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fandasubrt.github.io/0/úniky-tepla.html</loc>
+    <loc>https://fandasubrt.github.io/0/úniky_tepla.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fandasubrt.github.io/0/drobné-práce.html</loc>
+    <loc>https://fandasubrt.github.io/0/drobné_práce.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fandasubrt.github.io/0/zahradní-sluzby.html</loc>
+    <loc>https://fandasubrt.github.io/0/zahradní_sluzby.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -97,6 +97,7 @@
     <priority>0.5</priority>
   </url>
 </urlset>
+
 
 
 
