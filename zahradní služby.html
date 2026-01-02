@@ -3,102 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahradní služby - František Šubrt</title>
-    <meta name="description" content="Zahradní služby od Františka Šubrta – osobní přístup, praktické zkušenosti a vášeň pro zahradničení. Nabízím údržbu, úpravy a tvorbu krásných přírodních zahrad." />
+    <title>Zahradní služby Ondřejov - František Šubrt | Údržba, úpravy, jezírka</title>
+    <meta name="description" content="Zahradní služby Ondřejov - František Šubrt. Údržba zahrad, úpravy záhonů, tvorba jezírek v Ondřejově, Senohrabech, Mnichovicích, Benešově, Říčanech a okolí. Praktické zkušenosti, osobní přístup." />
+    <meta name="keywords" content="zahradní služby Ondřejov, údržba zahrady Ondřejov, zahradník Ondřejov, jezírka Ondřejov, úpravy záhonů Ondřejov, zahradní práce Senohraby, zahradník Mnichovice, František Šubrt zahrady">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #2d5016;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3, h4 {
+            color: #2d5016;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            color: #3a7c1e;
+            margin-top: 25px;
+        }
+        
+        .service-highlight {
+            background-color: #f0f8e8;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .location-badge {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin: 5px;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+            justify-content: center;
+        }
+        
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .contact-box {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .phone-number {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2d5016;
+            margin: 10px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2d5016;
+            color: white;
+            margin-top: 30px;
+        }
+        
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .service-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .service-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Zahradní služby - František Šubrt",
-  "description": "Osobní přístup, praktické zkušenosti a vášeň pro zahradničení. Nabízím údržbu, úpravy a tvorbu krásných přírodních zahrad.",
-  "provider": {
-    "@type": "Person",
-    "name": "František Šubrt"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Zahradní služby",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Údržba zahrady",
-          "description": "Pravidelná údržba trávníků, keřů a záhonů."
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "František Šubrt - Zahradní služby Ondřejov",
+      "description": "Zahradní služby v Ondřejově a okolí - údržba zahrad, úpravy záhonů, tvorba jezírek, zahradnické práce",
+      "url": "https://fandasubrt.github.io/0/zahradni-sluzby.html",
+      "telephone": "+420604590261",
+      "email": "fandasubrt@seznam.cz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ke Šmejkalce",
+        "addressLocality": "Turkovice Ondřejov",
+        "postalCode": "25166",
+        "addressCountry": "CZ"
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Úprava záhonů a keřů",
-          "description": "Tvarování a úprava záhonů, keřů a stromů."
-        }
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.9056,
+          "longitude": 14.7842
+        },
+        "geoRadius": "30000",
+        "description": "Ondřejov, Senohraby, Mnichovice, Benešov, Říčany, Praha-východ"
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Tvorba jezírek a vodních prvků",
-          "description": "Vytváření a údržba jezírek a vodních prvků v zahradách."
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Údržba zahrad",
+            "description": "Pravidelná údržba trávníků, keřů a záhonů v Ondřejově a okolí"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tvorba jezírek",
+            "description": "Vytváření a údržba jezírek a vodních prvků v zahradách"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Úpravy záhonů a keřů",
+            "description": "Tvarování a úprava záhonů, keřů a stromů"
+          }
         }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Stavební práce (omezené)",
-          "description": "Menší stavební práce bez těžké mechanizace, například opěrné zdi nebo úpravy terénu."
-        }
-      }
-    ]
-  }
-}
-</script>
+      ],
+      "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00"
+    }
+    </script>
 
 </head>
 <body>
     <header>
-        <h1>Zahradní služby</h1>
+        <h1>Zahradní služby Ondřejov - František Šubrt</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Domov</a></li>
-                <li><a href="služby.html">Služby</a></li>
+                <li><a href="služby.html">Služby-ceník</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="zařízení.html">Zařízení</a></li>
+                <li><a href="dokumenty.html">Smlouva</a></li>
+                <li><a href="oprávnění.html">Oprávnění</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h2>Co nabízím</h2>
+        <div class="service-highlight">
+            <h2>Zahradní služby pro <strong>Ondřejov, Senohraby, Mnichovice, Benešov, Říčany</strong> a okolí</h2>
+            <p>Jsem <strong>František Šubrt</strong> a nabízím <strong>zahradní služby v Ondřejově</strong> a blízkém okolí. Mám <strong>dlouholeté praktické zkušenosti</strong> s péčí o zahrady a rád vám pomohu s údržbou nebo úpravami vaší zahrady.</p>
+            
+            <div style="margin: 15px 0;">
+                <span class="location-badge">Zahradník Ondřejov</span>
+                <span class="location-badge">Zahradní služby Senohraby</span>
+                <span class="location-badge">Zahradník Mnichovice</span>
+                <span class="location-badge">Zahradní práce Benešov</span>
+                <span class="location-badge">Údržba zahrad Říčany</span>
+            </div>
+        </div>
 
-        <h3>Osobní přístup</h3>
-        <p>Rád se věnuji zahradním pracím kolem svého domu a mám zkušenosti s různými činnostmi, jako je sekání trávy, úprava záhonů nebo vytváření jezírek. Každý projekt, na kterém pracuji, se snažím přizpůsobit individuálním potřebám a představám. Mé ceny se liší podle druhu práce, kterou nabízím, a rád si promluvím o vašich nápadech a přáních.</p>
+        <h2>Co nabízím jako zahradník v Ondřejově a okolí</h2>
 
-        <h3>Praktické zkušenosti</h3>
-        <p>V průběhu let jsem se naučil, jak se postarat o zahradu, ať už jde o údržbu trávníku, tvarování keřů nebo budování opěrných zdí. Mým cílem je pomoci vám s údržbou vaší zahrady a přispět k jejímu přírodnímu vzhledu a funkčnosti. Pokud máte zájem o nějaké specifické úpravy, neváhejte se na mě obrátit.</p>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Údržba zahrad</h3>
+                <p>Pravidelná údržba trávníků, sekání, vertikutace, hnojení. Péče o keře a stromy, prořezávání, tvarování.</p>
+            </div>
+            
+            <div class="service-item">
+                <h3>Úprava záhonů a keřů</h3>
+                <p>Zakládání nových záhonů, úprava stávajících, výsadba rostlin, mulčování, odplevelování.</p>
+            </div>
+            
+            <div class="service-item">
+                <h3>Tvorba jezírek a vodních prvků</h3>
+                <p>Vytváření jezírek, potůčků, vodopádů. Údržba stávajících vodních prvků, čištění, zimní příprava.</p>
+            </div>
+            
+            <div class="service-item">
+                <h3>Menší zahradní stavby</h3>
+                <p>Opěrné zdi z přírodního kamene, cestičky, schůdky, jednoduché pergoly, zahradní nábytek.</p>
+            </div>
+        </div>
+
+        <h3>Osobní přístup zahradníka v Ondřejově</h3>
+        <p>Jako <strong>zahradník působící v Ondřejově</strong> se každému projektu věnuji individuálně. Mám <strong>praktické zkušenosti</strong> s různými zahradními činnostmi - od sekání trávy přes úpravu záhonů až po vytváření jezírek. Každou zakázku přizpůsobuji konkrétním potřebám a představám zákazníka.</p>
+
+        <h3>Praktické zkušenosti z let praxe</h3>
+        <p>Během let jsem se naučil, jak se správně postarat o zahradu. Jako <strong>zahradník pro Ondřejov a okolí</strong> vám mohu pomoci s ú údržbou vaší zahrady a přispět k jejímu přírodnímu vzhledu a funkčnosti. Zaměřuji se na praktická a účelná řešení.</p>
 
         <h3>Vášeň pro zahradničení</h3>
-        <p>Zahradničení mě baví a rád se podílím na vytváření krásného přírodního prostoru. Ať už potřebujete jednorázovou pomoc, nebo pravidelnou údržbu, jsem tu pro vás, abych zajistil, že vaše zahrada bude v dobrém stavu a odrážet váš osobní styl.</p>
+        <p>Zahradničení je moje záliba a rád se podílím na vytváření krásných přírodních prostorů. Ať už potřebujete <strong>jednorázovou pomoc s úpravou zahrady v Ondřejově</strong> nebo <strong>pravidelnou údržbu</strong>, jsem tu pro vás.</p>
 
-        <h3>Omezení mé techniky</h3>
-        <p>Rád bych vás upozornil, že nemám k dispozici bagr ani těžkou stavební mechanizaci. To omezuje mé možnosti při větších stavebních nebo rozsáhlých zemních pracích. Pokud potřebujete takové práce, doporučuji spolupráci s specializovanými firmami.</p>
+        <div class="contactcontact-box">
+            <h3>Kontaktujte zahradníka v Ondřejově</h3>
+            <p>Potřebujete <strong>zahradní služby v Ondřejově</strong> nebo okolních obcích?</p>
+            <p class="phone-number">Telefon: +420 604 590 261</p>
+            <p><strong>Email:</strong> fandasubrt@seznam.cz</p>
+            <p><strong>Působnost:</strong> Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
+            <p><em>Zatím nabízím pouze příležitostné zahradnické práce</em></p>
+        </div>
 
-        <h4>Příklady mé práce</h4>
+        <h3>Realistická omezení</h3>
+        <p>Rád bych byl transparentní - <strong>nemám k dispozici bagr ani těžkou stavební mechanizaci</strong>. To znamená, že mé možnosti při větších stavebních nebo rozsáhlých zemních pracích jsou omezené. Pro takové práce doporučuji spolupráci se specializovanými firmami.</p>
+
+        <h3>Příklady zahradních prací</h3>
+        <p>Zde jsou některé z realizací, na kterých jsem pracoval jako <strong>zahradník v oblasti Ondřejova</strong>:</p>
+        
         <div class="gallery">
-            <img src="images/jezírko.jpg" alt="jezírko" width="300">
+            <img src="images/jezírko.jpg" alt="Zahradní jezírko vytvořené v Ondřejově" width="300">
             
         </div>
+        
+        <p><em>Fotografie ukazují příklady zahradních prací v oblasti <strong>Ondřejova a okolí</strong>.</em></p>
+
+        <h3>Proč zvolit mé zahradní služby v Ondřejově?</h3>
+        <ul>
+            <li><strong>Lokální znalost</strong> - dobře znám podmínky v Ondřejově a okolí</li>
+            <li><strong>Praktické zkušenosti</strong> - 20+ let práce na vlastní zahradě</li>
+            <li><strong>Osobní přístup</strong> - každou zahradu řeším individuálně</li>
+            <li><strong>Férové ceny</strong> - cena podle rozsahu a náročnosti práce</li>
+            <li><strong>Flexibilita</strong> - přizpůsobím se vašim časovým možnostem</li>
+        </ul>
     </main>
+    
     <footer>
-        <p>Copyright &copy; 2025 František Šubrt. Všechna práva vyhrazena.</p>
+        <p>Copyright &copy; 2025 František Šubrt - Zahradní služby Ondřejov. Všechna práva vyhrazena.</p>
+        <p>Zahradní práce: Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí | Tel: +420 604 590 261</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
