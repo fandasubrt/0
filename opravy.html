@@ -1,90 +1,384 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Drobné opravy a údržba, servis a hodinový manžel - František Šubrt</title>
-        <meta name="description" content="Nabízím drobné opravy, servis strojů a zařízení, včetně služeb hodinového manžela. Rychlé a efektivní opravy, domácí práce a pomoc s domácností. Kontaktujte Františka Šubrta." />
-
-        <link rel="icon" href="images/favicon.png" type="image/png">
-        <link rel="stylesheet" href="styles.css" />
-
-        <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Drobné opravy a služby hodinového manžela",
-  "description": "Nabízím drobné opravy a údržbu strojů a zařízení, montáže, instalace a pomoc s domácími pracemi. Rychlé, spolehlivé a s osobním přístupem.",
-  "provider": {
-    "@type": "Person",
-    "name": "František Šubrt"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Služby hodinového manžela",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Drobné opravy",
-        "description": "Opravy domácích spotřebičů, zahradní techniky, menší instalace."
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Služby hodinového manžela Ondřejov - Opravy, montáže, údržba | František Šubrt</title>
+    <meta name="description" content="Hodinový manžel Ondřejov - František Šubrt. Profesionální služby hodinového manžela v Ondřejově, Senohrabech, Mnichovicích, Benešově, Říčanech. Opravy, montáže, instalace, drobné práce v domácnosti. Rychlá pomoc +420 604 590 261." />
+ />
+    <meta name="keywords" content="hodinový manžel Ondřejov, opravy Ondřejov, montáže Ondřejov, drobné opravy Ondřejov, údržba domácnosti Ondřejov, služby hodinového manžela, František Šubrt, řemeslník Ondřejov, pomoc v domácnosti, sestavení nábytku Ondřejov" />
+    
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #4CAF50;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        .service-category {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .service-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .price-list {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .highlight {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .location-badge {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+        
+        .contact-box {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .phone-large {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 10px 0;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .service-list {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Služby hodinového manžela Ondřejov - František Šubrt",
+      "description": "Profesionální služby hodinového manžela v Ondřejově a okolí. Opravy, montáže, instalace, drobné práce v domácnosti.",
+      "provider": {
+        "@type": "Person",
+        "name": "František Šubrt",
+        "telephone": "+420604590261",
+        "email": "fandasubrt@seznam.cz",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ondřejov",
+          "addressRegion": "Středočeský kraj",
+          "addressCountry": "CZ"
+        }
       },
-      {
-        "@type": "Offer",
-        "name": "Montáže a instalace",
-        "description": "Montáž nábytku, zavěšení polic, instalace zařízení."
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.9056,
+          "longitude": 14.7842
+        },
+        "geoRadius": "30000",
+        "description": "Ondřejov, Senohraby, Mnichovice, Benešov, Říčany, Praha-východ"
       },
-      {
-        "@type": "Offer",
-        "name": "Pomoc s domácími pracemi",
-        "description": "Rychlá pomoc s domácími pracemi, úklidem, drobnými opravami."
-      }
-    ]
-  }
-}
-</script>
-
-    </head>
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Služby hodinového manžela Ondřejov",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Drobné opravy v domácnosti",
+            "description": "Opravy domácích spotřebičů, vodovodu, elektřiny, dveří, oken"
+          },
+          {
+            "@type": "Offer",
+            "name": "Montáže a instalace",
+            "description": "Montáž nábytku, zavěšení polic, instalace zařízení"
+          },
+          {
+            "@type": "Offer",
+            "name": "Služby hodinového manžela",
+            "description": "Komplexní pomoc s domácími pracemi a údržbou"
+          },
+          {
+            "@type": "Offer",
+            "name": "3D tisk a výroba dílů",
+            "description": "Výroba náhradních dílů, prototypů, dekorací"
+          }
+        ]
+      },
+      "priceRange": "od 300 Kč/hod"
+    }
+    </script>
+</head>
 <body>
     <header>
-        <h1>Drobné opravy, údržba a služby hodinového manžela</h1>
+        <h1>Služby hodinového manžela Ondřejov - František Šubrt</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Domov</a></li>
-                <li><a href="služby.html">Služby</a></li>
+                <li><a href="služby.html">Služby-ceník</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="zařízení.html">Zařízení</a></li>
+                <li><a href="dokumenty.html">Smlouva</a></li>
+                <li><a href="oprávnění.html">Oprávnění a certifikáty</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h2>Co nabízím</h2>
-        
-        <h3>Úvodní informace</h3>
-        <p>Nabízím drobné opravy a údržbu strojů a zařízení pro domácnosti a malé podniky. Specializuji se na menší úkoly, které pomohou udržet vaše vybavení v bezvadném stavu. Ať už potřebujete opravit zahradní techniku, domácí spotřebiče nebo jiná zařízení, jsem tu pro vás. Mým cílem je poskytnout rychlé a efektivní služby, které vám ušetří čas a peníze.</p>
-
-        <h3>Osobní přístup ke každé opravě</h3>
-        <p>Každá oprava, na které pracuji, je pro mě důležitá a přistupuji k ní s maximální pečlivostí. S osobním přístupem se snažím vyhovět potřebám každého zákazníka a zajistit, aby vaše zařízení opět fungovalo bez problémů. Rád s vámi proberu specifika každé opravy, abych se ujistil, že plně rozumím vašim požadavkům a očekáváním.</p>
-
-        <h3>Služby hodinového manžela</h3>
-        <p>Poskytuji širokou škálu služeb hodinového manžela, od drobných oprav, údržby, montáží, instalací, až po pomoc s domácími pracemi. Rychle, spolehlivě a s osobním přístupem. Ideální řešení pro vaše domácí či dílenské potřeby bez nutnosti objednávání specializovaných firem.</p>
-
-        <h3>Ceník služeb</h3>
-        <p>Ceny se pohybují podle typu opravy. Jednoduché seřízení a výměna dílů jsou na nižším konci spektra, zatímco komplexní opravy, které vyžadují diagnostiku a více práce, budou dražší. Každá oprava je posuzována individuálně, a proto se ceny mohou lišit. Na základě předběžného vyhodnocení vám poskytnu odhad nákladů, abyste měli jasnou představu o investici.</p>
-
-        <h3>Kontaktujte mě</h3>
-        <p>Pro více informací mě neváhejte kontaktovat. Jsem tu, abych vám pomohl a odpověděl na jakékoli dotazy, které můžete mít. Vaše spokojenost a důvěra jsou pro mě na prvním místě, a proto se snažím o transparentní komunikaci a kvalitní výsledek každé opravy.</p>
-        
-        <!--<h3>Příklady mé práce</h3>
-        <div class="gallery">
-            <img src="images/1.jpg" alt="....." width="300" />
+        <section class="service-category">
+            <h2>Hodinový manžel v Ondřejově a okolí - komplexní služby pro domácnosti</h2>
             
-            <!-- Přidejte další obrázky podle potřeby -->
+            <p>Jako <span class="highlight">hodinový manžel v Ondřejově</span> nabízím široké spektrum služeb pro domácnosti a malé podniky. Působím především v oblasti <strong>Ondřejova, Senohrab, Mnichovic, Benešova a Říčan</strong>.</p>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <span class="location-badge">Ondřejov</span>
+                <span class="location-badge">Senohraby</span>
+                <span class="location-badge">Mnichovice</span>
+                <span class="location-badge">Benešov</span>
+                <span class="location-badge">Říčany</span>
+                <span class="location-badge">Mirošovice</span>
+                <span class="location-badge">Strančice</span>
+            </div>
+        </section>
+        
+        <section class="service-category">
+            <h3>Hlavní služby hodinového manžela</h3>
+            
+            <div class="service-list">
+                <div class="service-item">
+                    <h4>Drobné opravy v domácnosti</h4>
+                    <ul>
+                        <li>Opravy vodovodních baterií a těsnění</li>
+                        <li>Výměna žárovek a elektrických zásuvek</li>
+                        <li>Opravy dveří, oken a zámků</li>
+                        <li>Seřízení a opravy nábytku</li>
+                        <li>Opravy domácích spotřebičů</li>
+                    </ul>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Montáže a instalace</h4>
+                    <ul>
+                        <li>Sestavení nábytku (IKEA, atd.)</li>
+                        <li>Zavěšení polic, obrazů, zrcadel</li>
+                        <li>Montáž záclon a žaluzií</li>
+                        <li>Instalace poliček a úložných systémů</li>
+                        <li>Sestavení zahradního nábytku</li>
+                    </ul>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Služby hodinového manžela</h4>
+                    <ul>
+                        <li>Pomoc s drobnými domácími pracemi</li>
+                        <li>Údržba domácnosti a zahrady</li>
+                        <li>Příprava na stěhování</li>
+                        <li>Sezónní údržba (zima/léto)</li>
+                        <li>Různé drobné práce na objednávku</li>
+                    </ul>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Specializované služby</h4>
+                    <ul>
+                        <li>3D tisk a výroba dílů</li>
+                        <li>Výroba na míru</li>
+                        <li>Opravy zahradní techniky</li>
+                        <li>Malé stavební úpravy</li>
+                        <li>Technické poradenství</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="price-list">
+            <h3>Ceník služeb hodinového manžela Ondřejov</h3>
+            <p>Ceny jsou orientační, každou zakázku posuzuji individuálně. Minimální výjezd je 1 hodina.</p>
+            
+            <div class="price-item">
+                <span>Základní hodinová sazba</span>
+                <span class="highlight">300 Kč/hod</span>
+            </div>
+            
+            <div class="price-item">
+                <span>Drobné opravy (do 30 minut)</span>
+                <span class="highlight">od 200 Kč</span>
+            </div>
+            
+            <div class="price-item">
+                <span>Sestavení nábytku (IKEA skříň)</span>
+                <span class="highlight">od 500 Kč</span>
+            </div>
+            
+            <div class="price-item">
+                <span>Zavěšení police/zrcadla</span>
+                <span class="highlight">od 150 Kč/kus</span>
+            </div>
+            
+            <div class="price-item">
+                <span>Výměna vodovodní baterie</span>
+                <span class="highlight">od 400 Kč</span>
+            </div>
+            
+            <div class="price-item">
+                <span>Oprava dveří/zámku</span>
+                <span class="highlight">od 300 Kč</span>
+            </div>
+            
+            <div class="price-item">
+                <span>3D tisk (materiál + práce)</span>
+                <span class="highlight">od 100 Kč + materiál</span>
+            </div>
+            
+            <p style="margin-top: 20px; font-style: italic;">Cena dopravy v rámci Ondřejova a nejbližšího okolí je zdarma. Do vzdálenějších lokalit účtuji dopravné 14 Kč/km.</p>
+        </section>
+        
+        <section class="service-category">
+            <h3>Proč si vybrat mě jako hodinového manžela v Ondřejově?</h3>
+            
+            <div class="service-list">
+                <div class="service-item">
+                    <h4>Rychlá reakce</h4>
+                    <p>Na vaši poptávku reaguji obvykle do 24 hodin. V naléhavých případech mohu často přijet ještě tentýž den.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Transparentní ceny</h4>
+                    <p>Před zahájením práce vám vždy sdělím odhad ceny. Žádná skrytá překvapení na faktuře.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Kvalitní práce</h4>
+                    <p>Všechny práce provádím pečlivě a s ohledem na dlouhodobou funkčnost. Používám kvalitní materiály.</p>
+                </div>
+                
+                <div class="service-item">
+                    <h4>Osobní přístup</h4>
+                    <p>Ke každému zákazníkovi přistupuji individuálně. Naslouchám vašim potřebám a navrhuji optimální řešení.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="contact-box">
+            <h3>Potřebujete hodinového manžela v Ondřejově nebo okolí?</h3>
+            <p class="phone-large">+420 604 590 261</p>
+            <p><strong>Email:</strong> fandasubrt@seznam.cz</p>
+            <p><strong>Působnost:</strong> Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
+            <p>Zavolejte mi, rád vám poradím a domluvíme se na termínu!</p>
         </div>
+        
+        <sectionsection class="service-category">
+            <h3>Často řešené problémy v oblasti Ondřejova</h3>
+            <p>Jako <strong>hodinový manžel v Ondřejově</strong> nejčastěji řeším tyto situace:</p>
+            
+            <ul>
+                <li><strong>Sestavení nového nábytku</strong> - po nákupu v IKEA nebo jiném obchodě</li>
+                <li><strong>Opravy po zimě</strong> - kontrola a opravy po zimním období</li>
+                <li><strong>Příprava na léto</strong> - montáž zahradního nábytku, údržba terasyasy</li>
+                <li><strong>Drobné opravy před stěhováním</strong> - příprava nemovitosti</li>
+                <li><strong>Různé "odložené" opravy</strong> - které dlouho čekají na vyřešení</li>
+            </ul>
+            
+            <p>Neváhejte mě kontaktovat i s neobvyklým požadavkem. Rád vymyslím řešení i pro specifické situace.</p>
+        </section>
     </main>
+    
     <footer>
-        <p>Copyright &copy; 2025 František Šubrt. Všechna práva vyhrazena.</p>
+        <p>Copyright &copy; 2025 František Šubrt - Hodinový manžel Ondřejov. Všechna práva vyhrazena.</p>
+        <p>Profesionální služby hodinového manžela pro Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
     </footer>
 </body>
 </html>
-
-
-
