@@ -1,116 +1,379 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Instalatérské, stavební, truhlářské práce a hodinový manžel - František Šubrt</title>
-        <meta name="description" content="František Šubrt nabízí spolehlivé instalatérské, stavební, truhlářské práce a hodinového manžela. Transparentní ceny, cenové zvýhodnění u větších projektů a kvalitní služby včetně konzultací.">
-        <link rel="icon" href="images/favicon.png" type="image/png">
-        <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instalatér Ondřejov, Stavební práce, Truhlářské služby | František Šubrt</title>
+    <meta name="description" content="Instalatérské, stavební a truhlářské práce v Ondřejově a okolí. Hodinový manžel pro Senohraby, Mnichovice, Benešov, Říčany. František Šubrt - kvalitní služby za férové ceny.">
+    <meta name="keywords" content="instalatér Ondřejov, stavební práce Ondřejov, truhlář Ondřejov, hodinový manžel Ondřejov, instalatér Senohraby, stavební práce Mnichovice, truhlář Benešov, hodinový manžel Říčany, František Šubrt, drobné opravy, montáže, údržba">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #34495e;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .location-emphasis {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .service-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        .service-card h4 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 2px solid #ddd;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .contact-box {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+;
+        }
+        
+        .phone-number {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2ecc71;
+            margin: 10px 0;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
 
-        <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "František Šubrt",
-  "description": "Instalatérské, stavební, truhlářské práce a hodinový manžel. Spolehlivé služby s transparentními cenami a kvalitní realizací.",
-  "url": "https://www.fandasubrt.github.io/0/drobné stavební, instalatérské a truhlářské práce.html",  // nahraďte skutečnou URL
-  "serviceType": [
-    "Instalatérské práce",
-    "Stavební práce",
-    "Truhlářské práce",
-    "Hodinový manžel"
-  ],
-  "potentialAction": {
-    "@type": "ContactAction",
-    "target": "tel:+420604590261", // nahraďte aktuálním telefonním číslem
-    "name": "Kontaktovat Františka Šubrt"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Služby Františka Šubrt",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Drobná instalatérská práce",
-        "description": "Rychlá pomoc s drobnými instalatérskými opravami a montážemi."
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "František Šubrt - Instalatérské a stavební práce Ondřejov",
+      "description": "Instalatérské, stavební a truhlářské práce v Ondřejově, Senohrabech, Mnichovicích, Benešově, Říčanech a okolí. Hodinový manžel pro drobné opravy a montáže.",
+      "url": "https://fandasubrt.github.io/0/služby.html",
+      "telephone": "+420604590261",
+      "emailemail": "fandasubrt@seznam.cz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ke Šmejkalce",
+        "addressLocality": "Turkovice Ondřejov",
+        "postalCode": "25166",
+        "addressCountry": "CZ"
       },
-      {
-        "@type": "Offer",
-        "name": "Stavební práce",
-        "description": "Menší stavební opravy, úpravy a montáže."
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.9056,
+          "longitude": 14.7842
+        },
+        "geoRadius": "30000",
+        "description": "Ondřejov, Senohraby, Mnichovice, Benešov, Říčany, Praha-východ"
       },
-      {
-        "@type": "Offer",
-        "name": "Truhlářské práce",
-        "description": "Výroba a opravy truhlářských výrobků a nábytku."
-      },
-      {
-        "@type": "Offer",
-        "name": "Hodinový manžel",
-        "description": "Rychlá pomoc a údržba pro domácnosti i firmy."
-      }
-    ]
-  }
-}
-</script>
-
-    </head>
+      "makesOffer": [
+        "Plumbing",
+        "Carpentry",
+        "HandymanServices",
+        "HomeRepair"
+      ],
+      "serviceType": [
+        "Instalatérské práce",
+        "Stavební práce",
+        "Truhlářské práce",
+               "Hodinový manžel"
+      ],
+      "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00"
+    }
+    </script>
+</head>
 <body>
     <header>
-        <h1>Instalatérské, stavební, truhlářské práce a hodinový manžel</h1>
+        <h1>Instalatérské, stavební a truhlářské práce v Ondřejově a okolí</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Domov</a></li>
                 <li><a href="služby.html">Služby</a></li>
-                <li><a href="kontak.html">Kontakt</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="zařízení.html">Zařízení</a></li>
+                <li><a href="dokumenty.html">Smlouva</a></li>
+                <li><a href="oprávnění.html">Oprávnění</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h2>Nabídka služeb a hodinového manžela</h2>
-        <section>
-            <h3>Široká škála služeb</h3>
-           <p>Jako zkušený instalatér, stavebník, truhlář a hodinový manžel nabízím široké spektrum služeb. Mám dlouholeté zkušenosti a praxi, díky nimž dokážu zajistit kvalitní práce. Mým cílem je zajistit individuální přístup a transparentní ceny. Rád vám pomohu s drobnými opravami i menšími projekty, včetně konzultací a plánování.</p>
+        <section class="location-emphasis">
+            <h2>Řemeslnické služby pro <span class="highlight">Ondřejov, Senohraby, Mnichovice, Benešov, Říčany</span> a okolí</h2>
+            <p>Jsem <strong>František Šubrt</strong>, řemeslník s dlouholetou praxí působící v regionu <strong>Praha-východ a Benešovsko</strong>. Specializuji se na instalatérské, stavební a truhlářské práce pro domácnosti i firmy v okolí Ondřejova.</p>
         </section>
+        
         <section>
-            <h3>Hodinový manžel – rychlá pomoc pro vaše domácnosti a firmy</h3>
-            <p>Poskytuji také služby hodinového manžela, ideální pro drobné opravy, montáže a údržbu. Efektivně a spolehlivě vám pomohu s jakýmikoli domácími pracemi, a to za férové ceny. Kontaktujte mě pro rychlou a kvalitní pomoc.</p>
+            <h2>Kompletní řemeslnické služby v Ondřejově</h2>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <h4>Instalatérské práce Ondřejov</h4>
+                    <p>Kompletní instalatérské služby včetně:</p>
+                    <ul>
+                        <li>Opravy a výměna vodovodních baterií</li>
+                        <li>Montáž a opravy umyvadel, van, WC</li>
+                        <li>Odstraňování ucpání odpadů</li>
+                        <li>Montáž praček, myček, bojlerů</li>
+                        <li>Drobé opravy rozvodů vody</li>
+                    </ul>
+                    <p><strong>Působnost:</strong> Ondřejov, Senohraby, Mnichovice, Říčany, Benešov</p>
+                </div>
+                
+                <div class="service-card">
+                    <h4>Stavební práce Ondřejov</h4>
+                    <p>Drobné stavební úpravy a opravy:</p>
+                    <ulul>
+                        <li>Pokládání dlažby a obkladů</li>
+                        <li>Montáž sádrokartonových příček</li>
+                        <li>Malé zednické práce</li>
+                        <li>Montáž dveří a oken</li>
+                        <li>Opravy omítek a malování</li>
+                    </ul>
+                    <p><strong>Působnost:</strong> Celý region Praha-východ</p>
+                </div>
+                
+                <div class="service-card">
+                    <h4>Truhlářské práce Ondřejov</h4>
+                    <p>Kvalitní truhlářské služby:</p>
+                    <ul>
+                        <li>Výroba nábytku na míru</li>
+                        <li>Opravy dveří, oken, nábytku</li>
+                        <li>Montáž kuchyňských linek</li>
+                        <li>Výroba polic, regálů, skříní</li>
+                        <li>Zahradní truhlářské práce</li>
+                    </ul>
+                    <p><strong>Působnost:</strong> Ondřejov a okolní obce</p>
+                </div>
+                
+                <div class="service-card">
+                    <h4>Hodinový manžel Ondřejov</h4>
+                    <p>Rychlá pomoc pro domácnosti:</p>
+                    <ul>
+                        <li>Drobné opravy všeho druhu</li>
+                        <li>Montáž nábytku a spotřebičů</li>
+                        <li>Údržba domácnosti</li>
+                        <li>Sezónní přípravy</li>
+                        <li>Rychlé zásahy do 24 hodin</li>
+                    </ul>
+                    <p><strong>Působnost:</strong> Okolí Ondřejova do 20 km</</p>
+                </div>
+            </div>
         </section>
+        
         <section>
-            <h3>Transparentní cenové nabídky a zvýhodnění</h3>
-            <p>Vždy vám poskytnu jasnou a předem domluvenou cenovou nabídku. U menších projektů nabízím cenové zvýhodnění. Dodržování termínů a kvalitní práce jsou pro mě samozřejmostí.</p>
+            <h3>Hodinový manžel – rychlá pomoc pro domácnosti a firmy v Ondřejově a okolí</h3>
+            <p>Jako <strong>hodinový manžel pro Ondřejov, Senohraby, Mnichovice, Benešov a Říčany</strong> nabízím rychlou a spolehlivou pomoc s drobnými opravami, montážemi a údržbou. Efektivně vyřeším problémy, se kterými si nevíte rady, a to za transparentní a férové ceny.</p>
+            
+            <p>Moje služby <strong>hodinového manžela</strong> jsou ideální pro:</p>
+            <ul>
+                <li>Seniory a rodiny s dětmi, kteří potřebují občasnou pomoc</li>
+                <li>Firmy a podnikatele s drobnými údržbářskými potřebami</li>
+                <li>Majitele rekreačních objektů v okolí Ondřejova</li>
+                <li>Všechy, kteří nemají čas nebo nástroje na drobné opravy</li>
+            </ul>
         </section>
+        
         <section>
-            <h3>Kvalita a spokojenost zákazníků</h3>
-            <p>Kladu důraz na vysokou kvalitu práce a spokojenost zákazníků. Pokud máte dotazy nebo potřebujete poradit, neváhejte mě kontaktovat. Rád vám pomohu realizovat vaše představy.</p>
+            <h3>Transparentní ceny a cenové zvýhodnění</h3>
+            <p>Vždy vám poskytnu <strong>jasnou a předem domluvenou cenovou nabídku</strong> bez skrytých poplatků. U větších projektů nebo pravidelných služeb nabízím cenové zvýhodnění. Dodržování termínů a kvalitní práce jsou pro mě samozřejmostí.</p>
+            
+            <div class="contact-box">
+                <h3>Bezplatná konzultace a cenová nabídka</h3>
+                <p>Zavolejte mi pro nezávaznou konzultaci a cenovou kalkulaci:</p>
+                <p class="phone-number">+420 604 590 261</p>
+                <p>nebo napište na: <strong>fandasubrt@seznam.cz</strong></p>
+            </div>
         </section>
+        
         <section>
-        <h3>Omezení služeb</h3>
-        <p>Upozorňuji, že se specializuji pouze na drobné práce, opravy a montáže. Kompletní stavební nebo větší projekty nezajišťuji. Pokud potřebujete drobné opravy nebo montáže, rád vám pomohu.</p>
+            <h3>Kvalita práce a spokojenost zákazníků</h3>
+            <p>Kladu důraz na <strong>vysokou kvalitu práce a spokojenost zákazníků</strong>. Všechny práce provádím pečlivě a s ohledem na vaše potřeby. Pokud máte dotazy nebo potřebujete poradit, neváhejte mě kontaktovat. Rád vám pomohu realizovat vaše představy.</p>
+            
+            <p><strong>Jako řemeslník v Ondřejově</strong> garantuji:</p>
+            <ul>
+                <li>Kvalitní materiály a provedení</li>
+                <li>Dodržení dohodnutých termínů</li>
+                <li>Čistotu při práci a po dokončení</li>
+                <li>Záruku na provedené práce</li>
+                <li>Osobní přístup a flexibilitu</li>
+            </ul>
         </section>
-
-        <h3>Příklady mé práce</h3>
-        <div class="gallery">
-            <img src="images/palandy.jpg" alt="palandy" width="100" />
-            <img src="images/přístřešek.jpg" alt="přístřešek" width="100" />
-            <img src="images/truhlík pod okny.jpg" alt="truhlík pod okny" width="100" />
-            <img src="images/dlažba.jpg" alt="dlažba" width="100" />
-            <img src="images/koupelna.jpg" alt="koupelna" width="100" />
-            <img src="images/koupelna1.jpg" alt="koupelna" width="100" />
-            <img src="images/koupelna2.jpg" alt="koupelna" width="100" />
-            <!-- Přidejte další obrázky -->
-        </div>
+        
+        <section>
+            <h3>Omezení služeb</h3>
+            <p>Specializuji se na <strong>drobné práce, opravy a montáže v Ondřejově a okolí</strong>. Kompletní stavební projekty nebo rozsáhlé rekonstrukce nezajišťuji. Pokud potřebujete drobné opravy, montáže nebo údržbu, rád vám pomohu.</p>
+            
+            <p><strong>Moje působnost jako řemeslníka:</strong> Primárně <span class="highlight">Ondřejov</span> a obce do 30 km: Senohraby, Mnichovice, Říčany, Benešov, Mirošovice, Strančice, Hrusice, Turkovice a další.</p>
+        </section>
+        
+        <section>
+            <h3>Příklady mé práce v Ondřejově a okolí</h3>
+            <p>Zde jsou ukázky realizovaných prací v regionu <strong>Ondřejov, Senohraby, Mnichovice, Benešov a Říčany</strong>:</p>
+            
+            <div class="gallery">
+                <img src="images/palandy.jpg" alt="Montáž palandy v Ondřejově" title="Výroba a montáž palandy" />
+                <img src="images/přístřešek.jpg" alt="Stavba přístřešku v Senohrabech" title="Stavba přístřešku" />
+                <img src="images/truhlík pod okny.jpg" alt="Truhlíky pod okny v Mnichovicích" title title="Truhlíky pod okny" />
+                <img src="images/dlažba.jpg" alt="Pokládka dlažby v Říčanech" title="Pokládka dlažby" />
+                
+            </div>
+            
+            <p style="text-align: center; margin-top: 20px; font-style: italic;">Všechny práce byly realizovány v okolí Ondřejova s důrazem na kvalitu a spokojenost zákazníků.</p>
+        </section>
+        
+        <section class="contact-box">
+            <h3>Potřebujete řemeslníka v Ondřejově nebo okolí?</h3>
+            <p>Kontaktujte mě ještě dnes!</p>
+            <p class="phone-number">+420 604 590 261</p>
+            <p><strong>Email:</strong> fandasubrt@seznam.cz</p>
+            <p><strong>Působnost:</strong> Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
+            <p><strong>Rychlá reakce, férové ceny, kvalitní práce.</strong></p>
+        </section>
     </main>
+    
     <footer>
-        <p>Copyright &copy; 2025 František Šubrt. Všechna práva vyhrazena.</p>
+        <p>Copyright &copy; 2025 František Šubrt - Řemeslnické služby Ondřejov. Všechna práva vyhrazena.</p>
+        <p>Instalatérské, stavební a truhlářské práce: Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
-
-
