@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domácí opravy, 3D tisk a servis v Praze Východ | František Šubrt</title>
-    <meta name="description" content="Profesionální domácí opravy, 3D tisk a služby na Praze Východ. Nabízím také služby hodinového manžela a další asistence pro domácnosti a malé podniky. Kontaktujte Františka Šubrta pro opravy, sestavení nábytku a specializovaná zařízení." />
-
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Řemeslník Ondřejov - František Šubrt | Opravy, výroba na míru, hodinový manžel</title>
+    <meta name="description" content="Řemeslník Ondřejov - František Šubrt. Profesionální řemeslnické služby v Ondřejově, Senohrabech, Mnichovicích, Benešově, Říčanech a okolí. Opravy, výroba na míru, hodinový manžel, 3D tisk, sestavení nábytku. Rychlý kontakt +420 604 590 261." />
+    <meta name="keywords" content="řemeslník Ondřejov, opravy Ondřejov, hodinový manžel Ondřejov, řemeslník Senohraby, řemeslník Mnichovice, řemeslník Benešov, řemeslník Říčany, František Šubrt, domácí opravy, 3D tisk, sestavení nábytku, opravy Praze východ, řemeslníci Ondřejov, opravář Ondřejov, údržba domácnosti Ondřejov">
     
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     
     <style>
@@ -21,41 +21,108 @@
             text-align: center;
         }
 
-        .introduction, .contact-info {
+        .introduction, .contact-info, .service-area {
             margin: 20px 0;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 15px;
             border-radius: 8px;
         }
 
-        h2, h3 {
+        h1, h2, h3, h4 {
             margin-bottom: 10px;
         }
 
         p {
             line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .locations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .location-group {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 200px;
+            flex: 1;
+        }
+        
+        .service-list {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .service-list li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        
+        .phone-large {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        
+        @media (max-width: 768px) {
+            .locations {
+                flex-direction: column;
+            }
+            
+            .location-group {
+                min-width: auto;
+            }
         }
     </style>
+    
     <!-- Strukturovaná data (JSON-LD) -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "František Šubrt",
-  "url": "https://fandasubrt.github.io/0/index.html",
-  "telephone": "+420604590261",
-  "email": "fandasubrt@seznam.cz",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Ke Šmejkalce",
-    "addressLocality": "Turkovice Ondřejov",
-    "postalCode": "25166",
-    "addressCountry": "CZ"
-  }
-}
-</script>
-
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "František Šubrt - Řemeslník Ondřejov",
+      "description": "Řemeslnické služby v Ondřejově, Senohrabech, Mnichovicích, Benešově, Říčanech a okolí. Opravy, výroba na míru, hodinový manžel.",
+      "url": "https://fandasubrt.github.io/0/index.html",
+      "telephone": "+420604590261",
+      "email": "fandasubrt@seznam.cz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ke Šmejkalce",
+        "addressLocality": "Turkovice Ondřejov",
+        "postalCode": "25166",
+        "addressCountry": "CZ"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.9056,
+          "longitude": 14.7842
+        },
+        "geoRadius": "20000",
+        "description": "Ondřejov, Senohraby, Mnichovice, Benešov, Říčany, Praha-východ"
+      },
+      "makesOffer": [
+        "HomeRepair",
+        "FurnitureAssembly",
+        "3DPrinting",
+        "HandymanServices"
+      ],
+      "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00"
+    }
+    </script>
 </head>
+
 <body>
     <video autoplay muted loop class="background-video">
         <source src="VID_1.mp4" type="video/mp4">
@@ -63,9 +130,9 @@
     </video>
     
     <div class="overlay"></div>
-    
+
     <header>
-        <h1>Domácí opravy a služby v Praze Východ - František Šubrt</h1>
+        <h1>Řemeslník Ondřejov - František Šubrt</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Domov</a></li>
@@ -74,31 +141,82 @@
                 <li><a href="zařízení.html">Zařízení</a></li>
                 <li><a href="dokumenty.html">Smlouva</a></li>
                 <li><a href="oprávnění.html">Oprávnění a certifikáty</a></li>
-
             </ul>
         </nav>
     </header>
-    
-    <main>
-        <h2 class="special-heading">Služby pro domácnosti a malé podniky, Pomoc při domácích opravách, Sestavení nábytku</h2>
 
-        
+    <main>
+        <h2>Řemeslnické služby v Ondřejově a okolí - opravy, výroba na míru, hodinový manžel</h2>
         
         <section class="introduction">
-            <h3><strong><p>Vše pro dům, byt a zahradu.</p></strong><br></h3>
-            <h3><strong><p>Zatím hledám jen příležitostnou práci</p></strong><br></h3>
+            <h3>Zkušený řemeslník pro <span class="highlight">Ondřejov, Senohraby, Mnichovice, Benešov, Říčany</span> a okolí</h3>
+            
+            <p>Jmenuji se <strong>František Šubrt</strong> a jsem <strong>řemeslník s praxí</strong> působící v regionu <strong>Praha-východ a Benešovsko</strong>. Specializuji se na komplexní řemeslnické služby pro domácnosti, firmy a malé podniky v okolí Ondřejova.</p>
+            
+            <p>Jako <strong>řemeslník v Ondřejově</strong> nabízím široké spektr služeb od drobných oprav až po výrobu na míru. Mým cílem je poskytovat rychlou, kvalitní a spolehlivou pomoc, když ji potřebujete.</p>
+            
+            <h4>Hlavní řemeslnické služby:</h4>
+            <ul class="service-list">
+                <li><strong>Domácí opravy a údržba</strong> - opravy vodovodu, elektřiny, dveří, oken</li>
+                <li><strong>Výroba na míru</strong> - nábytek, police, regály, zahradní prvky</li>
+                <li><strong>Služby hodinového manžela</strong> - drobné opravy a pomoc v domácnosti</li>
+                <li><strong>Sestavení nábytku</strong> - od jednoduchých skříní po komplexní kuchyňské linky</li>
+                <li><strong>3D tisk a prototypování</strong> - výroba dílů, náhradních částí, dekorací</li>
+                <li><strong>Zahradní pomoc</strong> - montáž zahradního nábytku, stavba přístřešků</li>
+                <li><strong>Malé stavební úpravy</strong> - obklady, dlažby, montáž poliček</li>
+            </ul>
         </section>
-
+        
+        <section class="service-area">
+            <h3>Řemeslník pro tyto lokality:</h3>
+            <p>Působím jako <strong>řemeslník především v Ondřejově</strong> a těchto okolních obcích:</p>
+            
+            <div class="locations">
+                <div class="location-group">
+                    <h4>Ondřejov a nejbližší okolí:</h4>
+                    <p><strong>Ondřejov</strong>, Turkovice, Hrusice, Ondřejovek</p>
+                </div>
+                
+                <div class="location-group">
+                    <h4>Praha-východ - jižní část:</h4>
+                    <p><strong>Senohraby</strong>, <strong>Mnichovice</strong>, <strong>Říčany</strong>, Mirošovice, Strančice, Křížkový Újezdec</p>
+                </div>
+                
+                <div class="location-group">
+                    <h4>Benešovsko - severní část:</h4>
+                    <p><strong>Benešov</strong>, Poříčí nad Sázavou, Chocerady, Týnec nad Sázavou</p>
+                </div>
+            </div>
+            
+            <p>Dojíždím také do dalších obcí v okruhu cca 20 km od Ondřejova. Neváhejte mě kontaktovat i pokud bydlíte v jiné obci v této oblasti.</p>
+        </section>
+        
         <section class="contact-info">
-            <h4>Kontaktujte mě</h4>
-            <p>Pro více informací nebo dotazy mě neváhejte kontaktovat. V sekci "Služby-ceník" najdete více informací.</p>
+            <h3>Kontaktujte řemeslníka v Ondřejově</h3>
+            <p>Potřebujete <strong>řemeslníka v Ondřejově</strong> nebo okolí? Jsem vám k dispozici!</p>
+            
+            <p class="phone-large">Telefon: +420 604 590 261</p>
+            <p><strong>Email:</strong> fandasubrt@seznam.cz</p>
+            <p><strong>Adresa:</strong> Ke Šmejkalce, Turkovice Ondřejov, 25166</p>
+            
+            <p><strong>Výhody spolupráce:</strong></p>
+            <ul class="service-list">
+                <li>Rychlá reakce na vaši poptávku</li>
+                <li>Férové a transparentní ceny</li>
+                <li>Kvalitní provedení práce</li>
+                <li>Flexibilní přístup a individuální řešení</li>
+                <li>Záruka na provedené práce</li>
+            </ul>
+            
+            <p><strong>Zatím hledám jen příležitostnou práci</strong> - ideální pro drobné opravy, jednorázové zakázky nebo pravidelnější údržbu.</p>
+            
+            <p>Více informací o konkrétních službách a cenách najdete v sekci <a href="služby.html" style="color: #4CAF50;">Služby-ceník</a>.</p>
         </section>
     </main>
-    
-    <footer>
-        
 
-        <p>Copyright &copy; 2025 František Šubrt. Všechna práva vyhrazena.</p>
+    <footer>
+        <p>Copyright &copy; 2025 František Šubrt - Řemeslník Ondřejov. Všechna práva vyhrazena.</p>
+        <p>Řemeslnické služby: Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
     </footer>
 </body>
 </html>
