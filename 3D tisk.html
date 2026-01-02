@@ -1,117 +1,425 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Profesionální technický 3D tisk - František Šubrt | Služby v ČR</title>
-        <meta name="description" content="Nabízíme technický 3D tisk od Františka Šubrta. Tisk jednoduchých i složitých mechanických dílů s různými materiály. Ceník, materiály a konzultace." />
-
-        <link rel="icon" href="images/favicon.png" type="image/png">
-        <link rel="stylesheet" href="styles.css" />
-        <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Profesionální technický 3D tisk - František Šubrt | Služby v ČR",
-  "description": "Nabízím technický 3D tisk od Františka Šubrta. Tisk jednoduchých i složitých mechanických dílů s různými materiály. Ceník, materiály a konzultace.",
-  "url": "https://fandasubrt.github.io/0/3D tisk.html",
-  "publisher": {
-    "@type": "Organization",
-    "name": "František Šubrt"
-  },
-  "mainEntity": {
-    "@type": "Service",
-    "name": "Technický 3D tisk",
-    "description": "Profesionální služby technického 3D tisku s různými materiály a složitostmi, včetně konzultací a odhadu cen."
-  },
-  "hasPart": [
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D tisk Ondřejov - František Šubrt | Technický 3D tisk v Praze-východ</title>
+    <meta name="description" content="Profesionální 3D tisk Ondřejov - František Šubrt. Technický 3D tisk dílů, náhradních částí a prototypů v Ondřejově, Senohrabech, Mnichovicích, Benešově, Říčanech. Ceník, materiály, konzultace." />
+    <meta name="keywords" content="3D tisk Ondřejov, 3D tisk Senohraby, 3D tisk Mnichovice, 3D tisk Benešov, 3D tisk Říčany, technický 3D tisk, 3D tisk Praha-východ, 3D tisk náhradní díly, 3D tisk prototypy, František Šubrt 3D tisk, 3D tisk služby, 3D tisk ceník" />
+    
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #34495e;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            margin-top: 25px;
+            color: #2980b9;
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .location-badge {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+        
+        .service-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+            justify-content: center;
+        }
+        
+        .gallery img {
+            max-width: 200px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .cta-box {
+            background-color: #e8f4fc;
+            border: 2px solid #3498db;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .phone-large {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        .material-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .material-item {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #d1e7ff;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .material-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery img {
+                max-width: 150px;
+            }
+        }
+    </style>
+    
+    <script type="application/ld+json">
     {
+      "@context": "https://schema.org",
       "@type": "Service",
-      "name": "3D tisk jednoduchých objektů",
-      "description": "Tisk krytů, držáků a dalších jednoduchých mechanických dílů za příznivé ceny."
-    },
-    {
-      "@type": "Service",
-      "name": "Tisk složitých geometrických objektů",
-      "description": "Tisk složených a technicky náročných součástí s optimalizací návrhu."
-    },
-    {
-      "@type": "Service",
-      "name": "Použití speciálních filamentů",
-      "description": "Tisk s flexibilními, vysokoteplotními nebo jinými speciálními materiály."
-    },
-    {
-      "@type": "Service",
-      "name": "Příprava a optimalizace modelů",
-      "description": "Úprava CAD souborů, 3D skenování a optimalizace pro tisk."
+      "name": "3D tisk Ondřejov - František Šubrt",
+      "description": "Profesionální služby technického 3D tisku v Ondřejově a okolí. Tisk náhradních dílů, prototypů, mechanických součástek.",
+      "provider": {
+        "@type": "Person",
+        "name": "František Šubrt",
+        "telephone": "+420604590261",
+        "email": "fandasubrt@seznam.cz"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.9056,
+          "longitude": 14.7842
+        },
+        "geoRadius": "30000",
+        "description": "Ondřejov, Senohraby, Mnichovice, Benešov, Říčany, Praha-východ"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Služby 3D tisku",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Technický 3D tisk jednoduchých dílů"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "3D tisk složitých mechanických součástek"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "3D tisk s flexibilními materiály"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "3D tisk s vysokoteplotními materiály"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Příprava a optimalizace 3D modelů"
+            }
+          }
+        ]
+      },
+      "url": "https://fandasubrt.github.io/0/3D-tisk.html"
     }
-  ],
-  "potentialAction": {
-    "@type": "ContactPage",
-    "name": "Kontaktujte Františka Šubrta",
-    "url": "https://fandasubrt.github.io/0/kontakt.html"
-  }
-}
-
-</script>
-
+    </script>
 </head>
 <body>
     <header>
-        <h1>Profesionální technický 3D tisk od Františka Šubrta</h1>
-
+        <h1>3D tisk Ondřejov - František Šubrt | Technický 3D tisk v Praze-východ</h1>
+        <p>Profesionální služby 3D tisku pro domácnosti, firmy a kutily v Ondřejově a okolí</p>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Domov</a></li>
-                <li><a href="služby.html">Služby</a></li>
+                <li><a href="služby.html">Služby-ceník</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="zařízení.html">Zařízení</a></li>
+                <li><a href="dokumenty.html">Smlouva</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h2>Moje služby technického 3D tisku</h2>
-        <p>Ceny služeb se odvíjejí od složitosti návrhu a použitých materiálů. Přehledně vám vysvětlím, co jednotlivé faktory znamenají:</p>
-        
-       
-        <h3>Co znamená technycký 3D tisk</h3>
-        <p><strong>Funkčnost a pevnost:</strong>
-            Technický tisk klade důraz na výrobu dílů, které musí odolávat mechanickému namáhání, teplotám nebo jiným provozním podmínkám. Výsledné součásti jsou navrženy tak, aby splňovaly přesné technické požadavky, například pevnost, odolnost vůči opotřebení či stabilitu rozměrů.</p>
-            <br>
-            <p><strong>Výsledná kvalita:</strong>
-                Zatímco běžný tisk často klade důraz na vzhled a detailnost, technický tisk preferuje spíše funkční vlastnosti, jako je pevnost, stabilita nebo odolnost proti opotřebení. Estetika je zde druhotná nebo se řeší dodatečným zpracováním.</p>        
-        <h3>Jednoduché objekty a jejich ceny</h3>
-        <p>Pokud potřebujete vytisknout jednoduché objekty, jako jsou kryty nebo držáky, cena bude výrazně nižší. Tyto objekty mají obvykle méně detailů a jejich návrh je rychlejší a méně náročný na přípravu. Například, standardní kryt na kuchyňský nůž nebo držák na stůl mohou být snadno a rychle vytisknuty za přijatelnou cenu.</p>
-
-        <h3>Složené geometrie</h3>
-        <p>Pokud máte v plánu tisknout složené geometrie, jako jsou mechanické součástky nebo komplexní návrhy, cena se zvyšuje. Tyto objekty vyžadují pečlivější návrh a optimalizaci, abych zajistil jejich funkčnost a kvalitu. Například, díly pro robotiku nebo jiné technické aplikace často zahrnují více komponentů, které je třeba správně sladit.</p>
-
-        <h3>Speciální filamenty</h3>
-        <p>Ceny se také zvyšují při použití speciálních filamentů, jako jsou flexibilní materiály nebo materiály odolné vůči vysokým teplotám. Tyto filamenty jsou navrženy tak, aby splnily specifické požadavky na výkon a trvanlivost, což zvyšuje náklady na výrobu. Například, pokud potřebujete flexibilní součást, která se bude ohýbat, nebo součást, která bude vystavena vysokým teplotám, jako je součástka do motoru, vyžaduje to speciální přístup a materiály.</p>
-
-        <h3>Příprava modelu a jejich optimalizace</h3>
-        <p>Proces tisku zahrnuje také přípravu modelu a optimalizaci pro tisk. To zahrnuje úpravy návrhu, aby byl kompatibilní s tiskovým procesem, a zajištění, že model bude správně vytištěn. Tato fáze může zahrnovat 3D skenování, CAD návrhy nebo úpravy existujících souborů, což může ovlivnit celkovou dobu a cenu služby.</p>
-
-        <p>Pokud máte konkrétní projekt na mysli, neváhejte mě kontaktovat pro osobní konzultaci. Rád vám poskytnu odhad ceny a termín dodání na základě vašich potřeb a požadavků.</p>
-
-
-        <h3>Příklady mé práce</h3>
-        <div class="gallery">
-            <img src="images/chránič.jpg" alt="chránič" width="100">
-            <img src="images/vřeteno.jpg" alt="vřeteno" width="100">
+        <section class="intro">
+            <h2>Profesionální 3D tisk v <span class="highlight">Ondřejově</span> a okolí</h2>
             
-            <!-- Přidejte další obrázky podle potřeby -->
-        </div>
-    </main>
-    <footer>
+            <div class="location-badges">
+                <span class="location-badge">3D tisk Ondřejov</span>
+                <span class="location-badge">3D tisk Senohraby</span>
+                <span class="location-badge">3D tisk Mnichovice</span>
+                <span class="location-badge">3D tisk Benešov</span>
+                <span class="location-badge">3D tisk Říčany</span>
+                <span class="location-badge">3D tisk Praha-východ</span>
+            </div>
+            
+            <p>Jsem <strong>František Šubrt</strong> a nabízím <strong>profesionální služby technického 3D tisku</strong> v regionu <strong>Ondřejov, Senohraby, Mnichovice, Benešov, Říčany</strong> a celé oblasti <strong>Praha-východ</strong>. Specializuji se na tisk funkčních dílů, náhradních částí a prototypů pro domácnosti, malé firmy a kutily.</p>
+            
+            <p>Jako <strong>řemeslník s 3D tiskárnami</strong> pomáhám lidem v okolí Ondřejova řešit problémy s chybějícími díly, vytvářet vlastní návrhy nebo opravovat rozbité věci pomocí moderních technologií.</p>
+        </section>
         
-
-        <p>Copyright &copy; 2025 František Šubrt. Všechna práva vyhrazena.</p>
+        <section class="what-is">
+            <h2>Co je technický 3D tisk?</h2>
+            
+            <div class="service-card">
+                <h3>Funkčnost a pevnost na prvním místě</h3>
+                <p><strong>Technický 3D tisk</strong> se zaměřuje na výrobu dílů, které musí odolávat mechanickému namáhání, teplotám nebo specifickým provozním podmínkám. Na rozdíl od dekorativního tisku, kde je důležitý vzhled, u technického tisku jde především o:</p>
+                <ul>
+                    <li><strong>Pevnost a odolnost</strong> - díly musí vydržet namáhání</li>
+                    <li><strong>Přesnost rozměrů</strong> - pro správné fungování v mechanismech</li>
+                    <li><strong>Odolnost vůči opotřebení</strong> - dlouhá životnost dílů</li>
+                    <li><strong>Stabilita materiálu</strong> - při různých teplotách a vlhkosti</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <h3>Kdy využít technický 3D tisk v Ondřejově?</h3>
+                <p>Jako <strong>specialista na 3D tisk v Ondřejově</strong> pomáhám s těmito typy projektů:</p>
+                <ul>
+                    <li><strong>Náhradní díly</strong> - k rozbitým spotřebičům, nářadí, hračkám</li>
+                    <li><strong>Prototypy</strong> - testování nových výrobků a nápadů</li>
+                    <li><strong>Mechanické součástky</strong> - ozubená kola, držáky, spojky</li>
+                    <li><strong>Pomůcky a přípravky</strong> - pro dílny, zahrady, domácnosti</li>
+                    <li><strong>Unikátní řešení</strong> - na míru pro specifické potřeby</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="services">
+            <h2>Služby 3D tisku - co nabízím</h2>
+            
+            <div class="material-list">
+                <div class="material-item">
+                    <h3>Jednoduché objekty</h3>
+                    <p><strong>Kryty, držáky, stojánky</strong> - rychlý a cenově dostupný tisk. Ideální pro běžné potřeby domácností v Ondřejově a okolí.</p>
+                    <p><em>Příklady: držák na telefon, kryt na spínač, stojánek na květiny</em></p>
+                </div>
+                
+                <div class="material-item">
+                    <h3>Složené geometrie</h3>
+                    <p><strong>Mechanické součástky, komplexní návrhy</strong> - vyžadují pečlivý návrh a optimalizaci pro zajištění funkčnosti.</p>
+                    <p><em>Příklady: ozubená kola, kloubové spoje, součástky do nářadí</em></p>
+                </div>
+                
+                <div class="material-item">
+                    <h3>Speciální materiály</h3>
+                    <p><strong>Flexibilní filamenty</strong> - pro ohebné díly</p>
+                    <p><strong>Vysokoteplotní materiály</strong> - odolné do 100°C+</p>
+                    <p><strong>Vláknem vyztužené</strong> - extrémní pevnost</p>
+                </div>
+                
+                <div class="material-item">
+                    <h3>Příprava model modelů</h3>
+                    <p><strong>Optimalizace pro tisk</strong> - úpravy CAD souborů</p>
+                    <p><strong>Konzultace návrhů</strong> - poradím s vhodností tisku</p>
+                    <p><strong>Návrh od nuly</strong> - vytvořím model podle vašich potřeb</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="pricing">
+                       <h2>Cena 3D tisku v Ondřejově</h2>
+            <p>Cena <strong>3D tisku</strong> se odvíjí od několika faktorů. Jako <strong>řemeslník v Ondřejově</strong> nabízím transparentní cenovou politiku:</p>
+            
+            <div class="service-card">
+                <h3>Faktory ovlivňující cenu:</h3>
+                <ul>
+                    <li><strong>Množství materiálu</strong> - spotřeba filamentu</li>
+                    <li><strong>Doba tisku</strong> - čas strávený na tiskárně</li>
+                    <li><strong>Složitost modelu</strong> - jednoduché vs. komplexní díly</li>
+                    <li><strong>Použitý materiál</strong> - standardní vs. speciální filamenty</li>
+                    <li><strong>Příprava modelu</strong> - čas na optimalizaci a úpravy</li>
+>
+                </ul>
+            </div>
+            
+            <p><strong>Orientační ceny:</strong></p>
+            <ul>
+                <li><strong>Jednoduché díly</strong> (kryty, držáky): od 50 Kč + materiál</li>
+                <li><strong>Středně složité díly</strong>: od 150 Kč + materiál</li>
+                <li><strong>Komplexní mechanické součástky</strong>: od 300 Kč + materiál</li>
+                <li><strong>Speciální materiály</strong>: individuální kalkulace</li>
+            </ul>
+            
+            <p><em>Pro přesnou cenu mě kontaktujte s konkrétním požadavkem. Jako <strong>řemeslník působící v Ondřejově</strong> rád poskytnu nezávaznou kalkulaci.</em></p>
+        </section>
+        
+        <section class="gallery-section">
+            <h2>Příklady mé práce - 3D tisk</h2>
+            <p>Zde jsou ukázky některých projektů, které jsem realizoval pro klienty v <strong>Ondřejově a okolí</strong>:</p>
+            
+            <div class="gallery">
+                <img src="images/chránič.jpg" alt="3D tisk chrániče - Ondřejov" title="3D tisk chrániče - realizováno v Ondřejově">
+                <img src="images/vřeteno.jpg" alt="3D tisk vřetena - Senohraby" title="3D tisk mechanického vřetena - Senohraby">
+                <!-- Přidejte další obrázky s popisy lokalit -->
+            </div>
+            
+            <p><em>Všechny díly jsou vytištěny s důrazem na funkčnost a kvalitu. Jako <strong>řemeslník specializující se na 3D tisk v Ondřejově</strong> dbám na preciznost a spolehlivost každého výrobku.</em></p>
+        </section>
+        
+        <div class="cta-box">
+            <h3>Potřebujete 3D tisk v Ondřejově nebo okolí?</h3>
+            <p>Jsem vám k dispozici jako <strong>specialista na 3D tisk v regionu Ondřejov, Senohraby, Mnichovice, Benešov, Říčany</strong>.</p>
+            
+            <p class="phone-large">Telefon: +420 604 590 261</p>
+            <p><strong>Email:</strong> fandasubrt@seznam.cz</p>
+            <p><strong>Lokality:</strong> Dojíždím do všech obcí v okruhu 20 km od Ondřejova</p>
+            
+            <p><strong>Nabízím:</strong></p>
+            <ul>
+                <li>Konzultace zdarma - poradím s vhodností 3D tisku pro váš projekt</li>
+                <li>Rychlé dodání - většinu dílů vytisknu do 3 pracovních dnů</li>
+                <li>Kvalitní materiály - používám ověřené filamenty od českých dodavatelů</li>
+                <li>Individuální přístup - každý projekt řeším na míru</li>
+            </ul>
+            
+            <p><a href="kontakt.html" style="display: inline-block; background-color: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; margin-top: 10px;">Kontaktujte mě pro nezávaznou konzultaci</a></p>
+        </div>
+        
+        <section class="locations">
+            <h2>3D tisk v těchto lokalitách</h2>
+            <p>Jako <strong>řemeslník s 3D tiskárnami</strong> působím především v těchto obcích:</p>
+            
+            <div class="location-badges">
+                <span class="location-badge">Ondřejov</span>
+                <span class="location-badge">Turkovice</span>
+                <span class="location-badge">Hrusice</span>
+                <span class="location-badge">Senohraby</span>
+                <span class="location-badge">Mnichovice</span>
+                <span class="location-badge">Říčany</span>
+                <span class="location-badge">Miroirošovice</span>
+                <span class="location-badge">Strančice</span>
+                <span class="location-badge">Benešov</span>
+                <span class="location-badge">Poříčí nad Sázavou</span>
+                <span class="location-badge">Chocerady</span>
+                <span class="location-badge">Týnec nad Sázavou</span>
+            </div>
+            
+            <p>Dojíždím i do dalších obcí v okrese <strong>Praha-východ a Benešovsko</strong>. Neváhejte mě kontaktovat i pokud bydlíte mimo tyto obce - domluvíme se individuálně.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Copyright &copy; 2025 František Šubrt - 3D tisk Ondřejov. Všechna práva vyhrazena.</p>
+        <p>Profesionální 3D tisk služby: Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
+        <p>Telefon: +420 604 590 261 | Email: fandasubrt@seznam.cz</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
-
