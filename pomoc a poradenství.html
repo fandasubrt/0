@@ -3,73 +3,345 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pomoc a poradenství - Hodinový manžel, František Šubrt</title>
-    <meta name="description" content="Profesionální pomoc při svépomocných opravách, údržbě a službách jako Hodinový manžel. Získejte rady a podporu od Františka Šubrta, aby vaše projekty byly úspěšné.">
+    <title>Hodinový manžel Ondřejov - Poradenství a pomoc při opravách | František Šubrt</title>
+    <meta name="description" content="Hodinový manžel Ondřejov - František Šubrt. Profesionální poradenství a asistence při opravách v Ondřejově, Senohrabech, Mnichovicích, Benešově, Říčanech. Pomoc při svépomocných opravách, konzultace, rady s výběrem materiálů.">
+    <meta name="keywords" content="hodinový manžel Ondřejov, poradenství opravy Ondřejov, pomoc při opravách Ondřejov, asistence řemeslník Ondřejov, konzultace opravy, svépomocné opravy, František Šubrt poradenství, hodinový manžel Praha-východ">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+               nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #4CAF50;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            border-bottom: 22px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: #3498db;
+            margin-top: 1.5rem;
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .location-badge {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin: 0.2rem;
+            font-size: 0.9rem;
+        }
+        
+        .service-list {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-left: 4px solid #4CAF50;
+            margin: 1.5rem 0;
+        }
+        
+        .service-list li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .contact-box {
+            background-color: #e8f5e9;
+            border: 2px solid #4CAF50;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .phone-number {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            main {
+                padding: 0 0.5rem;
+            }
+            
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Pomoc a poradenství - Hodinový manžel, František Šubrt",
-  "description": "Profesionální pomoc při svépomocných opravách, údržbě a službách jako Hodinový manžel. Získejte rady a podporu od Františka Šubrta, aby vaše projekty byly úspěšné.",
-  "mainEntity": {
-    "@type": "Service",
-    "name": "Poradenství a asistence při opravách",
-    "description": "Nabízím asistenci a poradenství pro opravy svépomocí, údržbu a stavební práce. Poskytuji konzultace, praktické ukázky a rady týkající se výběru nástrojů a materiálů.",
-    "provider": {
-      "@type": "Person",
-      "name": "František Šubrt"
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Hodinový manžel - Poradenství a asistence při opravách",
+      "description": "Profesionální poradenství a asistence při svépomocných opravách v Ondřejově a okolí. Pomoc s výběrem materiálů, konzultace, praktické rady.",
+      "provider": {
+        "@type": "Person",
+        "name": "František Šubrt",
+        "telephone": "+420604590261",
+        "email": "fandasubrt@seznam.cz",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ondřejov",
+          "addressRegion": "Středočeský kraj",
+          "addressCountry": "CZ"
+        }
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 4949.9056,
+          "longitude": 14.7842
+        },
+        "geoRadius": "30000",
+        "description": "Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí"
+      },
+      "serviceType": "HandymanConsultation",
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "CZK",
+          "unitCode": "HUR",
+          "description": "Hodinová sazba nebo pevná cena dle rozsahu poradenství"
+        }
+      }
     }
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Hodinový manžel František Šubrt"
-  }
-}
-</script>
+    </script>
 
 </head>
 <body>
     <header>
-        <h1>Pomoc a poradenství</h1>
+        <h1>Hodinový manžel Ondřejov - Poradenství a pomoc při opravách</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Domov</a></li>
-                <li><a href="služby.html">Služby</a></li>
+                <li><a href="služby.html">Služby-ceník</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="zařízení.html">Zařízení</a></li>
+                <li><a href="dokumenty.html">Smlouva</a></li>
+                <li><a href="oprávnění.html">Oprávnění a certifikáty</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h2>Co nabízím</h2>
+        <section>
+            <h2>Poradenství a asistence při opravách v <span class="highlight">Ondřejově a okolí</span></h2>
+            
+            <p>Jsem <strong>František Šubrt</strong>, <strong>hodinový manžel působící v Ondřejově</strong>, a nabízím profesionální poradenství a asistenci pro všechny, kteří se chtějí pustit do svépomocných oprav, ale potřebují odborné vedení.</p>
+            
+            <div class="location-badge">Ondřejov</div>
+            <div class="location-badge">Senohraby</div>
+            <div class="location-badge">Mnichovice</div>
+            <div class="location-badge">Benešov</div>
+            <div class="location-badge">Říčany</div>
+            <div class="location-badge">Praha-východ</div>
+            
+            <p>Působím jako <strong>hodinový manžel především v Ondřejově</strong> a těchto okolních obcích: <strong>Senohraby, Mnichovice, Benešov, Říčany, Mirošovice, Strančice, Turkovice, Hrusice</strong> a dalších obcích v okruhu cca 20 km.</p>
+        </section>
         
-        <h3>Asistence a poradenství</h3>
-        <p>Nabízím asistenci a poradenství pro ty, kteří chtějí provést opravy svépomocí, ale potřebují podporu. Mým cílem je poskytnout klientům potřebné znalosti a dovednosti, aby mohli úspěšně zvládnout své projekty. Bez ohledu na to, zda se jedná o drobné opravy v domácnosti, údržbu zahrady nebo menší stavební práce, jsem tu, abych pomohl.</p>
-
-        <h3>Typy služeb</h3>
-        <p>V rámci poradenství nabízím různé služby, které zahrnují osobní konzultace, praktické ukázky a rady týkající se správného výběru nástrojů a materiálů. Každý projekt je jedinečný, a proto se snažím přizpůsobit své služby specifickým potřebám zákazníků. Můžete mě kontaktovat s jakýmikoli dotazy a společně nalezneme nejlepší řešení pro vaši situaci.</p>
-
-        <h3>Cenová politika</h3>
-        <p>Ceny se mohou lišit podle rozsahu poradenství a času stráveného na místě. U některých projektů je možné stanovit pevnou cenu, zatímco u jiných, které vyžadují více času a úsilí, se cena určuje na základě hodinové sazby. Vždy se snažím být transparentní a férový vůči svým klientům, takže před začátkem práce vám poskytnu jasný odhad nákladů.</p>
-
-        <h3>Motivace a cíl</h3>
-        <p>Věřím, že s mou pomocí dokážete zvládnout jakoukoli výzvu, kterou si před sebe postavíte. Těším se na spolupráci a na to, že vám pomohu uskutečnit vaše nápady a plány!</p>
-
-        <h3>Důležité:</h3>
-        <p>Mé služby jsou pouze poradenské. Pokud chcete oficiální a právně uznávaný výkon stavebního dozoru, je třeba kontaktovat autorizovanou osobu s příslušnou kvalifikací.!</p>
+        <section>
+            <h3>Proč využít poradenství hodinového manžela v Ondřejově?</h3>
+            
+            <p>Nechcete nebo nemůžete si najmout řemeslníka na kompletní práci, ale potřebujete odbornou radu? Jako <strong>hodinový manžel v Ondřejově</strong> vám pomohu:</p>
+            
+            <div class="service-list">
+                <ul>
+                    <li><strong>Ušetřit peníze</strong> - naučíte se opravy dělat sami</li>
+                    <li><strong>Získat praktické dovednosti</strong> - naučím vás správné postupy</li>
+                    <li><strong>Vyhnout se chybám</strong> - poradím s výběrem materiálů a nástrojů</li>
+                    <li><strong>Zvýšit bezpečnost</strong> - ukážu bezpečné pracovní postupy</li>
+                    <li><strong>Ušetřit čas</strong> - pomohu vyřešit problém efektivně</li>
+                </ul>
+            </div>
+        </section>
         
-        <!--<h3>Příklady mé spolupráce</h3>
-        <div class="gallery">
-            <img src="images/1.jpg" alt="B" width="300" />
-            <img src="images/1.jpg" alt="B" width="300" />
-            <img src="images/1.jpg" alt="B" width="300" />-->
+        <section>
+            <h3>Typy poradenských služeb hodinového manžela</h3>
+            
+            <p>Jako <strong>hodinový manžel pro Ondřejov a okolí</strong> nabízím tyto formy poradenství:</p>
+            
+            <h4>Osobní konzultace na místě</h4>
+            <p>Přijedu k vám domů nebo na pracoviště v <strong>Ondřejově</strong> nebo okolních obcích a společně probereme váš projekt. Ukážu vám konkrétní postupy, zkontroluji stav a navrhnu nejlepší řešení.</p>
+            
+            <h4>Praktické ukázky a workshopy</h4>
+            <p>Naučím vás konkrétní dovednosti přímo na vašem projektu. Ať už jde o pokládku dlažby, opravu vodovodu, montáž nábytku nebo práci se dřevem.</p>
+            
+            <h4>Poradenství při nákupu materiálů</h4>
+            <p>Poradím s výběrem správných materiálů, nástrojů a nářadí. Doporučím, kde nakoupit kvalitně a výhodně v okolí <strong>Ondřejova</strong>.</p>
+            
+            <h4>Kontrola a posouzení prací</h4>
+            <p>Zkontroluji již provedené práce, posoudím kvalitu a poradím s případnými úpravami nebo opravami.</p>
+        </section>
+        
+        <section>
+            <h3>Oblasti poradenství hodinového manžela</h3>
+            
+            <div class="service-list">
+                <ul>
+                    <li><strong>Drobné stavební úpravy</strong> - montáž poliček, obklady, dlažby</li>
+                    <li><strong>Opravy v domácnosti</strong> - vodovod, elektřina, dveře, okna</li>
+                    <li><strong>Práce se dřevem</strong> - výroba nábytku, opravy dřevěných konstrukcí</li>
+                    <li><strong>Zahradní projekty</strong> - stavba přístřešků, montáž zahradního nábytku</li>
+                    <li><strong>Sestavování nábytku</strong> - od jednoduchých skříní po komplexní systémy</li>
+                    <li><strong>Výběr a údržba nástrojů</strong> - jak správně používat a udržovat nářadí</li>
+                    <li><strong>3D tisk a moderní technologie</strong> - jak využít 3D tisk pro opravy</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Cenová politika poradenství</h3>
+            
+            <p>Ceny za poradenství jako <strong>hodinový manžel v Ondřejově</strong> se stanovují individuálně podle rozsahu a náročnosti:</p>
+            
+            <div class="service-list">
+                <ul>
+                    <li><strong>Hodinová sazba</strong> - pro kratší konzultace a poradenství</li>
+                    <li><strong>Pevná cena</strong> - pro delší nebo komplexnější poradenské služby</li>
+                    <li><strong>Balíčkové služby</strong> - několik konzultací za výhodnější cenu</li>
+                    <li><strong>Online poradenství</strong> - videohovory za sníženou sazbu</li>
+                </ul>
+            </div>
+            
+            <p>Vždy jsem transparentní - před začátkem spolupráce vám poskytnu jasný odhad nákladů. Cena zahrnuje dopravu v rámci <strong>Ondřejova a okolních obcí</strong> (do 10 km).</p>
+            
+            <div class="contact-box">
+                <h4>Získejte cenovou nabídku na poradenství</h4>
+                <p class="phone-number">Telefon: +420 604 590 261</p>
+                <p><strong>Email:</strong> fandasubrt@seznam.cz</p>
+                <p>Popište mi váš projekt a domluvíme se na ceně a termínu konzultace.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Jak probíhá spolupráce s hodinovým manželem?</h3>
+            
+            <ol>
+                <li><strong>Kontaktujete mě</strong> telefonicky nebo emailem</li>
+                <li><strong>Popíšete svůj projekt</strong> a co potřebujete poradit</li>
+                <li><strong>Domluvíme se na termínu</strong> konzultace v Ondřejově nebo okolí</li>
+                <li><strong>Osobní setkání</strong> - probereme váš projekt, navrhnu řešení</li>
+                <li><strong>Praktická pomoc</strong> - ukážu vám postupy, poradím s materiály</li>
+                <li><strong>Následná podpora</strong> - jsem k dispozici pro dotazy i po konzultaci</li>
+            </ol>
+        </section>
+        
+        <div class="warning-box">
+            <h3>Důležité upozornění</h3>
+            <p>Moje služby jsou <strong>pouze poradenské a asistenční</strong>. Pokud potřebujete oficiální a právně uznávaný výkon stavebního dozoru nebo autorizované služby, je třeba kontaktovat autorizovanou osobu s příslušnou kvalifikací.</p>
+            <p>Jako <strong>hodinový manžel v Ondřejově</strong> vám pomohu naučit se opravy dělat sami, ale nezastupuji autorizované řemeslníky pro zákonem vyžadované činnosti.</p>
+        </div>
+        
+        <section>
+            <h3>Proč si vybrat mě jako hodinového manžela v Ondřejově?</h3>
+            
+            <div class="service-list">
+                <ul>
+                    <li><strong>Lokalita</strong> - působím přímo v Ondřejově, znám místní podmínky</li>
+                    <li><strong>Praxí ověřené rady</strong> - 30+ let zkušeností s řemeslnými pracemi</li>
+                    <li><strong>Trpělivý přístup</strong> - vysvětlím vše srozumitelně a názorně</li>
+                    <li><strong>Flexibilita</strong> - přizpůsobím se vašim časovým možnostem</li>
+                    <li><strong>Osobní přístup</strong> - každého klienta beru individuálně</li>
+                    <li><strong>Dostupnost</strong> - rychlá reakce na poptávky z Ondřejova a okolí</li>
+                </ul>
+            </div>
+            
+            <p>Těším se, že vám jako <strong>hodinový manžel pro Ondřejov a okolí</strong> pomohu zvládnout vaše opravárenské a údržbové projekty!</p>
+        </section>
     </main>
+    
     <footer>
-        <p>&copy; 2025 František Šubrt. Všechna práva vyhrazena.</p>
+        <p>Copyright &copy; 2025 František Šubrt - Hodinový manžel Ondřejov. Všechna práva vyhrazena.</p>
+        <p>Poradenství a asistence při opravách: Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
+        <p>Telefon: +420 604 590 261 | Email: fandasubrt@seznam.cz</p>
     </footer>
 </body>
 </html>
-
-
