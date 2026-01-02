@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fandasubrt.github.io/0/sitemap.xml
