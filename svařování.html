@@ -9,123 +9,163 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css" />
     
-    <style>
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin: 30px 0;
-        }
-        
-        .gallery figure {
-            text-align: center;
-            max-width: 200px;
-            margin: 0;
-        }
-        
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        
-        .gallery figcaption {
-            margin-top: 10px;
-            font-style: italic;
-            color: #ccc;
-        }
-        
-        .highlight {
-            color: #ffcc00;
-            font-weight: bold;
-        }
-        
-        .service-area {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-        }
-        
-        .locations-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .location-tag {
-            background-color: rgba(76, 175, 80, 0.2);
-            padding: 8px 15px;
-            border-radius: 20px;
-            border: 1px solid #4CAF50;
-        }
-        
-        .contact-box {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-            border-left: 4px solid #4CAF50;
-        }
-        
-        .phone-large {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #4CAF50;
-            margin: 10px 0;
-        }
-        
-        /* Oprava překlepu v CSS */
-        .highlighthighlight {
-            color: #ffcc00;
-            font-weight: bold;
-        }
-    </style>
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .gallery figure {
+        text-align: center;
+        max-width: 200px;
+        margin: 0;
+    }
+    
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .gallery figcaption {
+        margin-top: 10px;
+        font-style: italic;
+        color: #ccc;
+    }
+    
+    .highlight {
+        color: #ffcc00;
+        font-weight: bold;
+    }
+    
+    .service-area {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 8px;
+        margin: 25px 0;
+    }
+    
+    .locations-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .location-tag {
+        background-color: rgba(76, 175, 80, 0.2);
+        padding: 8px 15px;
+        border-radius: 20px;
+        border: 1px solid #4CAF50;
+    }
+    
+    .contact-box {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding padding: 20px;
+        border-radius: 8px;
+        margin: 25px 0;
+        border-left: 4px solid #4CAF50;
+    }
+    
+    .phone-large {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #4CAF50;
+        margin: 10px 0;
+    }
+    
+    /* Nové styly pro c ceník */
+    .price-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin: 30px 0;
+    }
+    
+    .price-category {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        border-radius: 8px;
+        border-top: 3px solid #4CAF50;
+    }
+    
+    .price-category h4 {
+        color: #ffcc00;
+        margin-top: 0;
+        border-bottom: 1px solid #444;
+        padding-bottom: 10px;
+    }
+    
+    .price-category ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .price-category li {
+        padding: 8px 0;
+        border-bottom: 1px dashed rgba(255,255,255,0.1);
+    }
+    
+    .price-category li:last-child {
+        border-bottom: none;
+    }
+    
+    .price-note {
+        background-color: rgba(255, 193, 7, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #ffc107;
+        margin-top: 25px;
+        font-size: 0.95em;
+    }
+</style>
 
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "František Šubrt - Svářeč Ondřejov",
-  "description": "Profesionální sváření ocelí metodami MMA a MAG v Ondřejově a okolí. Svářečské služby pro domácnosti, firmy a zemědělce.",
-  "url": "https://fandasubrt.github.io/0/svarovani-oceli.html",
-  "telephone": "+420420604590261",
-  "email": "fandasubrt@seznam.cz",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Ke Šmejkalce",
-    "addressLocality": "Turkovice Ondřejov",
-    "postalCode": "25166",
-    "addressCountry": "CZ"
-  },
-   "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": 49.9059056,
-      "longitude": 14.7842
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "František Šubrt - Svářeč Ondřejov",
+    "description": "Profesionální sváření ocelí metodami MMA a MAG v Ondřejově a okolí. Svářečské služby pro domácnosti, firmy a zemědělce.",
+    "url": "https://fandasubrt.github.io/0/svarovani-oceli.html",
+    "telephone": "+420420604590261",
+    "email": "fandasubrt@seznam.cz",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ke Šmejkalce",
+        "addressLocality": "Turkovice Ondřejov",
+        "postalCode": "25166",
+        "addressCountry": "CZ"
     },
-    "geoRadius": "30000",
-    "description": "Ondřejov, Senohraby, Mnichovice, Benešov, Říčany, Praha-východ"
-  },
-  "serviceType": [
-    "Svařování ocelí metodou MMA",
-    "Svařování ocelí metodou MAG",
-    "Opravy svařováním",
-    "Výroba kovových konstrukcí"
-  ],
-  "makesOffer": [
-    "WeldingService",
-    "MetalFabrication",
-    "RepairService"
-  ],
-  "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00"
+    "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.9059056,
+            "longitude": 14.7842
+        },
+        "geoRadius": "30000",
+        "description": "Ondřejov, Senohraby, Mnichovice, Benešov, Říčany, Praha-východ"
+    },
+    "serviceType": [
+        "Svařování ocelí metodou MMA",
+        "Svařování ocelí metodou MAG",
+        "Opravy svařováním",
+        "Výroba kovových konstrukcí"
+    ],
+    "makesOffer": [
+        "WeldingService",
+        "MetalFabrication",
+        "RepairService"
+    ],
+    "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00"
 }
 </script>
+
 </head>
 <body>
     <header>
@@ -140,7 +180,7 @@
     </header>
     
     <main>
-        <h2>Profesionální svářečské služby v <span class="highlight">Ondřejově a okolí</span></h2>
+        <h2>Profesionální svářečské služby v <span class="highlight">OOndřejově a okolí</span></h2>
         
         <section class="service-area">
             <h3>Svářeč pro oblast: <span class="highlight">Ondřejov, Senohraby, Mnichovice, Benešov, Říčany</span></h3>
@@ -162,7 +202,7 @@
         <section>
             <h3>Široké možnosti svařování ocelí</h3>
             <p>Jako <strong>svářeč v Ondřejově</strong> nabízím kvalitní služby svařování ocelí metodami MMA a MAG. Specializuji se na pevné a spolehlivé spoje s důrazem na přesnost, kvalitu a individuální přístup. Ať už potřebujete <strong>opravit zemědělské nářadí v Benešově</strong>, <strong>vyrobit konstrukci v Senohrabech</strong> nebo <strong>opravit plot v Mnichovicích</strong>, rád vám pomohu.</p>
-        </ </section>
+        </section>
         
         <section>
             <h3>Svařování metodou MMA – spolehlivost a univerzálnost</h3>
@@ -184,24 +224,10 @@
                 <li>Výrobu kovového nábytku a regálů</li>
                 <li>Konstrukce přístřešků a pergol</li>
                 <li>Opravy karoserií a rámu vozidel</li>
-                <li>Výrobu schodišť a zábradlí</li>
+                <li>Výroba schodišť a zábradlí</li>
                 <li>Průmyslové aplikace a prototypy</li>
             </ul>
             <p>Jako <strong>svářeč MAG v Ondřejově</strong> používám moderní technologie a materiály, které garantují pevnost a dlouhou životnost svárů.</p>
-        </section>
-        
-        <section>
-            <h3>Typické zakázky pro <span class="highlight">řemeslníka-svářeče v Ondřejově</span>:</h3>
-            <ul>
-                <li>Opravy a výroba zemědělského nářadí</li>
-                <li>Opravy plotů, bran a vrat</li>
-                <li>Výroba a opravy zahradního nábytku</li>
-                <li>Konstrukce přístřešků a pergol</li>
-                <li>Opravy přívěsů a vozíků</li>
-                <li>Výroba kovových regálů a skladovacích systémů</li>
-                <li>Opravy karoserií a rámu vozidel</li>
-                <li>Výroba schodišť a zábradlí</li>
-            </ul>
         </section>
         
         <section>
@@ -216,9 +242,56 @@
             </ul>
         </section>
         
+        <!-- NOVÝ CENÍK -->
+        <section>
+            <h3>Ceník vybraných svářečských prací – <span class="highlight">orientační ceny*</span></h3>
+            <p><em>*Ceny jsou orientační a konečná cena se odvíjí od náročnosti, množství materiálu a dojezdové vzdálenosti. Uvedené ceny jsou včetně DPH.</em></p>
+
+            <div class="price-list">
+                <div class="price-category">
+                    <h4>Opravy a drobné práce</h4>
+                    <ul>
+                        <li><strong>Oprava zahradního nářadí (lopata, motyka)</strong> – od 150 K Kč/kus</li>
+                        <li><strong>Oprava kovového plotu (přivaření prutu)</strong> – od 200 Kč/zásah</li>
+                        <li><strong>Přivaření ucha na kbelík, kotel</strongstrong> – od 250 Kč</li>
+                        <li><strong>Oprava kovové židle/stolu</strong> – od 300 Kč</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="price-category">
+                    <h4>Výroba a montáž</h4>
+                    <ul>
+                        <li><strong>Výroba jednoduchého kovového stojanu</strong> – od 800 Kč</li>
+                        <li><strong>Výroba a montáž kovové konzole (např. pro polici)</strong> – od 500 Kč</li>
+                        <li><strong>Přivaření zámku nebo pantů na vrátka</strong> – od 450 Kč</li>
+                        <li><strong>Výroba schůdků z profilové oceli</strong> – od 1 500 Kč</li>
+                        <li><strong>Svaření konstrukce pro kompostér (1x1m)</strong> – od 1 200 Kč</li>
+                    </ul>
+                </div>
+
+                <div class="price-category">
+                    <h4>Svařování dle délky švu</h4>
+                    <ul>
+                        <li><strong>Svaření tenkého plechu (do 3mm) – MMA/MAG</strong> – od 25 Kč/cm</li>
+                        <li><strong>Svaření středního profilu (4-8mm) – MMA/MAG</strong> – od 35 Kč/cm</li>
+                        <li><strong>Svaření silného materiálu (nad 10mm) – MMA</strong> – od 50 Kč/cm</li>
+                        <li><strong>Koutový svár (příprava + svaření)</strong> – od 40 Kč/cm</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="price-note">
+                <p><strong>Minimální výjezd/objednávka:</strong> 500 Kč (pokud práce nedosáhne této částky, účtuje se minimální poplatek).</p>
+                <p><strong>Dojezd  <strong>Do 30 km:</strong> 14 Kč/km.</p>
+                <p><strong>Cena materiálu:</strong> účtována dle spotřeby + marže cca 15%.</p>
+                <p>Nejlevněji vychází práce, které lze udělat na místě u zákazníka. Komplexní nabídku připravím po prohlídce nebo zaslání fotografií.</p>
+            </div>
+        </section>
+        
         <section class="contact-box">
             <h3>Potřebujete <span class="highlight">svářeče v Ondřejově</span> nebo okolí?</h3>
-            <p>Kontaktujte mě pro konzultaci nebo nezávaznounou cenovou nabídku:</p>
+            <p>Kontaktujte mě pro konzultaci nebo nezávaznou cenovou nabídku:</p>
             <p class="phone-large">Telefon: +420 604 590 261</p>
             <p><strong>Email:</strong> fandasubrt@seznam.cz</p>
             <p><strong>Působnost:</strong> Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
@@ -230,7 +303,7 @@
             <p>Specializuji se na <strong>sváření ocelí a kovových konstrukcí</strong> pro domácnosti, zemědělce a malé podniky. Kompletní průmyslové nebo velké stavební projekty nezajišťuji.</p>
             
             <h4>Omezující informace</h4>
-            <p>Vzhledem k povaze práce a logistickým možnostem budu vše provádět sám. Veškeré práce realizuji na místě, takže velké akce, přeprava nebo složité usazení nejsou v mém rozsahu služeb. Připravu a usazení na místě zvládnu pouze v rámci svých možností. Pokud máte specifické požadavky nebo omezení, kontaktujte mě předem, abychom mohli vše sladit.</p>
+            <p>Vzhledem k povaze práce a logistickým možnostem budu vše provádět sámám. Veškeré práce realizuji na místě, takže velké akce, přeprava nebo složité usazení nejsou v mém rozsahu služeb. Připravu a usazení na místě zvládnu pouze v rámci svých možností. Pokud máte specifické požadavky nebo omezení, kontaktujte mě předem, abychom mohli vše sladit.</p>
         </section>
 
         <h3>Ukázky svářečských prací metodou MAG</h3>
@@ -263,9 +336,8 @@
             <p class="phone-large">+420 604 590 261</p>
             <p>Rychlá reakce, férové ceny, kvalitní svářečské práce.</p>
         </section>
-
     </main>
-    
+
     <footer>
         <p>Copyright &copy; 2025 František Šubrt - Svářeč Ondřejov. Všechna práva vyhrazena.</p>
         <p>Profesionální sváření ocelí metodami MMA a MAG: Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
