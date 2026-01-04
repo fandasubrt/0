@@ -14,22 +14,27 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 2020px;
+            gap: 20px;
             margin: 30px 0;
         }
         
         .gallery figure {
-            background-color: rgba(0, 0, 0, 0.3);
-            padding: 15px;
-            border-radius: 8px;
             text-align: center;
             max-width: 200px;
+            margin: 0;
         }
         
         .gallery img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .gallery figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #ccc;
         }
         
         .highlight {
@@ -60,7 +65,7 @@
         }
         
         .contact-box {
-            background-color: rgba(0, 0, 0, 00.6);
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 20px;
             border-radius: 8px;
             margin: 25px 0;
@@ -71,8 +76,13 @@
             font-size: 1.3em;
             font-weight: bold;
             color: #4CAF50;
-;
             margin: 10px 0;
+        }
+        
+        /* Oprava překlepu v CSS */
+        .highlighthighlight {
+            color: #ffcc00;
+            font-weight: bold;
         }
     </style>
 
@@ -83,7 +93,7 @@
   "name": "František Šubrt - Svářeč Ondřejov",
   "description": "Profesionální sváření ocelí metodami MMA a MAG v Ondřejově a okolí. Svářečské služby pro domácnosti, firmy a zemědělce.",
   "url": "https://fandasubrt.github.io/0/svarovani-oceli.html",
-  "telephone": "+420604590261",
+  "telephone": "+420420604590261",
   "email": "fandasubrt@seznam.cz",
   "address": {
     "@type": "PostalAddress",
@@ -133,7 +143,7 @@
         <h2>Profesionální svářečské služby v <span class="highlight">Ondřejově a okolí</span></h2>
         
         <section class="service-area">
-            <h3>Svářeč pro oblast: <span class="highlighthighlight">Ondřejov, Senohraby, Mnichovice, Benešov, Říčany</span></h3>
+            <h3>Svářeč pro oblast: <span class="highlight">Ondřejov, Senohraby, Mnichovice, Benešov, Říčany</span></h3>
             <p>Jako <strong>zkušený svářeč působící v Ondřejově</strong> nabízím kvalitní svářečské služby metodami MMA a MAG pro domácnosti, firmy, zemědělce a drobné podnikatele v celém regionu Praha-východ a Benešovsko.</p>
             
             <div class="locations-list">
@@ -152,7 +162,7 @@
         <section>
             <h3>Široké možnosti svařování ocelí</h3>
             <p>Jako <strong>svářeč v Ondřejově</strong> nabízím kvalitní služby svařování ocelí metodami MMA a MAG. Specializuji se na pevné a spolehlivé spoje s důrazem na přesnost, kvalitu a individuální přístup. Ať už potřebujete <strong>opravit zemědělské nářadí v Benešově</strong>, <strong>vyrobit konstrukci v Senohrabech</strong> nebo <strong>opravit plot v Mnichovicích</strong>, rád vám pomohu.</p>
-        </section>
+        </ </section>
         
         <section>
             <h3>Svařování metodou MMA – spolehlivost a univerzálnost</h3>
@@ -174,7 +184,7 @@
                 <li>Výrobu kovového nábytku a regálů</li>
                 <li>Konstrukce přístřešků a pergol</li>
                 <li>Opravy karoserií a rámu vozidel</li>
-                <li>Výrobu sch schodišť a zábradlí</li>
+                <li>Výrobu schodišť a zábradlí</li>
                 <li>Průmyslové aplikace a prototypy</li>
             </ul>
             <p>Jako <strong>svářeč MAG v Ondřejově</strong> používám moderní technologie a materiály, které garantují pevnost a dlouhou životnost svárů.</p>
@@ -208,7 +218,7 @@
         
         <section class="contact-box">
             <h3>Potřebujete <span class="highlight">svářeče v Ondřejově</span> nebo okolí?</h3>
-            <p>Kontaktujte mě pro konzultaci nebo nezávaznou cenovou nabídku:</p>
+            <p>Kontaktujte mě pro konzultaci nebo nezávaznounou cenovou nabídku:</p>
             <p class="phone-large">Telefon: +420 604 590 261</p>
             <p><strong>Email:</strong> fandasubrt@seznam.cz</p>
             <p><strong>Působnost:</strong> Ondřejov, Senohraby, Mnichovice, Benešov, Říčany a okolí</p>
