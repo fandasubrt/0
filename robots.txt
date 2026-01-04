@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-https://github.com/fandasubrt/0/blob/main/sitemap.xml
+https://github.com/fandasubrt/0/sitemap.xml
