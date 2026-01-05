@@ -113,11 +113,16 @@
         
         .gallery img {
             max-width: 200px;
-            height: auto;
+            max-height: 200px; /* Přidáno */
+            width: auto; /* Přidáno */
+            height: auto; /* Přidáno */
+            object-fit: contain; /* Přidáno - zachová proporce */
             border: 1px solid #ddd;
             border-radius: 4px;
             transition: transform 0.3s;
+            background-color: #f8f8f8; /* Přidáno pro případ průhlednosti */
         }
+
         
         .gallery img:hover {
             transform: scale(1.05);
@@ -425,6 +430,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
